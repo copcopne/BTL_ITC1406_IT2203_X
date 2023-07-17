@@ -1,6 +1,9 @@
 *{
     margin:0;
 }
+html {
+    scroll-behavior: smooth;
+}
 .flex {
     display: flex;
    
@@ -23,7 +26,6 @@ a {
 .r-head { 
     text-align:right;
     width:70%;
-    display: flex;
     flex-direction: column;
     justify-content: center;
 
