@@ -26,6 +26,7 @@ a {
     display:flex;
     flex-direction: column;
     justify-content: center;
+    
 }
 .icon {
     width:120px;
