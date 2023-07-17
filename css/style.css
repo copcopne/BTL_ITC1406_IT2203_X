@@ -23,6 +23,9 @@ a {
 .r-head { 
     text-align:right;
     width:70%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .icon {
     width:120px;
@@ -46,7 +49,6 @@ a {
 .head  a {
     color:#146C94;
 }
-/*TEST TEST TEST*/
 /*navigation*/
 .nav {
     display:flex;
