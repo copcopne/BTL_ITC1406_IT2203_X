@@ -95,6 +95,7 @@ li {
     position: absolute;
     width: 100%;
     overflow: auto;
+    background-color: #d3e0ea;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 .dropdown:hover .dropdown-content{
