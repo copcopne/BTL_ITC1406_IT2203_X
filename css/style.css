@@ -86,21 +86,32 @@ li {
     color:#F6F5F5;
 }
 
-.dropdown{
+/*drop menu*/
+.drop{
     position: relative;
     display: inline-block;
 }
-.dropdown-content{
+.drop-content{
     display: none;
     position: absolute;
     width: 100%;
-    overflow: auto;
     background-color: #d3e0ea;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
-.dropdown:hover .dropdown-content{
+.drop-content2{
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: #d3e0ea;
+    left:100%;
+    top:0;
+}
+.drop:hover .drop-content{
     display: block;
 }
+.drop2:hover .drop-content2{
+    display: block;
+}
+
 /*aside*/
 aside > left {  
     width:9.5%;
@@ -113,6 +124,6 @@ main {
     width:80%;
     margin:0 auto;
 }
-.thumnail {
+.thumbnail {
     margin:0 auto;
 }
