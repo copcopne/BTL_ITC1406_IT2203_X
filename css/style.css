@@ -170,50 +170,6 @@ nav ul{
     right: 310px;
     top: 15px;
 }
-/*drop menu*/
-.drop{
-    position: relative;
-    display: inline-block;
-}
-.drop-content{
-    min-width:350px;
-    display: none;
-    position: absolute;
-    width: 100%;
-    background-color: #d3e0ea;
-}
-.drop-content::after {
-    content: "";
-    border-width: 10px;
-    border-style: solid;
-    border-color: transparent transparent bisque transparent;
-    position: absolute;
-    bottom: 100%;
-    left: 10px;
-}
-.drop-content2 {
-    display: none;
-    position: absolute;
-    width: 100%;
-    background-color: #d3e0ea;
-    left:100%;
-    top:0;
-}
-.drop-content2::after {
-    content: "";
-    border-width: 10px;
-    border-style: solid;
-    border-color: transparent bisque transparent transparent;
-    position: absolute;
-    right:100%;
-    top: 10px;
-}
-.drop:hover .drop-content{
-    display: block;
-}
-.drop2:hover .drop-content2{
-    display: block;
-}
 
 /*aside*/
 aside > left {  
@@ -229,4 +185,12 @@ main {
 }
 .thumbnail {
     margin:0 auto;
+}
+/*nút goTop*/
+#goTop{
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
 }
