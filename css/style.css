@@ -11,7 +11,7 @@ html {
 }
 a {
     text-decoration:none;
-    color:white;
+    color:#D3E0EA;
 }
 .highlight {
     color:#1687A7;
@@ -216,19 +216,25 @@ footer p{
 
 /*artical*/
 article{
-    background-color: #146C94;
     padding: 1rem;
     margin-top: 1rem;
 }
 article h1{
     color:black;
+    padding:1rem;
 }
 /*Hỏi đáp*/
 .questions-archive .single-question{
     padding:1rem;
+    background-color: #146C94;
+    border-bottom: 1px solid black;
 }
 .questions-archive .single-question > i{
     width: 2%;
-    display: block;
+    display: flex;
     align-items: center;
+    color:#D3E0EA;
+}
+.solved{
+    color:lightgreen;
 }
