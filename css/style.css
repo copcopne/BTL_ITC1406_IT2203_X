@@ -178,6 +178,7 @@ aside > left {
 aside > right {  
     width:9.5%;
 }
+
 /*main*/
 main {
     width:80%;
@@ -186,6 +187,7 @@ main {
 .thumbnail {
     margin:0 auto;
 }
+
 /*nút goTop*/
 #goTop{
     display: block;
@@ -193,4 +195,20 @@ main {
     bottom: 20px;
     right: 20px;
     font-size: 24px;
+}
+
+/*footer*/
+footer{
+    justify-content: space-evenly;
+    align-items: center;
+    background:#146C94;
+    padding: 1rem;
+}
+footer hr {
+    color: #146C94;
+  }
+footer p{
+    color:white;
+    text-align: center;
+    font-weight: bold;
 }
