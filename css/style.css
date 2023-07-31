@@ -213,3 +213,22 @@ footer p{
     font-weight: bold;
     font-size: small;
 }
+
+/*artical*/
+article{
+    background-color: #146C94;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+article h1{
+    color:black;
+}
+/*Hỏi đáp*/
+.questions-archive .single-question{
+    padding:1rem;
+}
+.questions-archive .single-question > i{
+    width: 2%;
+    display: block;
+    align-items: center;
+}
