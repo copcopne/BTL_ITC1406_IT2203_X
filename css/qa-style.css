@@ -1,0 +1,27 @@
+/*artical*/
+article{
+    padding: 1rem;
+    margin-top: 1rem;
+}
+article h1{
+    color:black;
+    padding:1rem;
+}
+/*Hỏi đáp*/
+.single-question{
+    padding:1rem;
+    background-color: #1687A7;
+    border-bottom: 1px solid #146C94;
+}
+.single-question > i{
+    width: 2%;
+    display: flex;
+    align-items: center;
+    color:#D3E0EA;
+}
+.single-question:last-child{
+    border-bottom: 0;
+}
+.q-solved{
+    color:lightgreen;
+}

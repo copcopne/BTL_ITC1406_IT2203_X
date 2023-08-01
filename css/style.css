@@ -200,28 +200,3 @@ footer p{
     font-weight: bold;
     font-size: small;
 }
-
-/*artical*/
-article{
-    padding: 1rem;
-    margin-top: 1rem;
-}
-article h1{
-    color:black;
-    padding:1rem;
-}
-/*Hỏi đáp*/
-.questions-archive .single-question{
-    padding:1rem;
-    background-color: #146C94;
-    border-bottom: 1px solid black;
-}
-.questions-archive .single-question > i{
-    width: 2%;
-    display: flex;
-    align-items: center;
-    color:#D3E0EA;
-}
-.solved{
-    color:lightgreen;
-}
