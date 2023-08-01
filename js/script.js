@@ -1,14 +1,20 @@
-$(document).ready(function() {
-    $(window).scroll(function() {
-        var show = 100;
-        if($(this).scrollTop() > show) {
-            $('#goTop').fadeIn();
+function stickyNav () {
+
+}
+function goToTopButton () {
+    let button = document.getElementById("goTop");
+    window.onscroll = function () {
+        if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            button.style.display = "block";
         } else {
-            $('#goTop').fadeOut();
+            button.style.display = "none";
         }
+    }
+    button.addEventListener("click", () => {
+        window.scrollTo({top: 0, behavior: 'smooth'});
     });
-    $('#goTop').click(function() {
-        $('html, body').animate({scrollTop : 0}, 0);
-        return false;
-    });
-});
+}
+window.onload = function () {
+    stickyNav();
+    goToTopButton();
+}
