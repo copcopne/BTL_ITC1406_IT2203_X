@@ -1,0 +1,265 @@
+[{
+    "text": "Hoạt động",
+    "link": "#",
+    "children":
+    [
+        {
+            "text": "Quản lý chất lượng",
+            "link": "#",
+            "children":
+            [
+                {
+                    "text": "Đánh giá chất lượng bệnh viện",
+                    "link": "#"
+                },
+                {
+                    "text": "Hoạt động cải tiến",
+                    "link": "#"
+                }
+            ]
+        },
+        {
+            "text": "Báo cáo sự cố y khoa",
+            "link": "#",
+            "children":
+            []
+        }
+    ]
+},
+{
+    "text": "Khoa/Phòng",
+    "link": "#",
+    "children":
+    [
+        {
+            "text": "Phòng chức năng",
+            "link": "#",
+            "children":
+            [
+                {
+                    "text": "PHÒNG HÀNH CHÍNH QUẢN TRỊ",
+                    "link": "#"
+                },
+                {
+                    "text": "PHÒNG TÀI CHÍNH - KẾ TOÁN",
+                    "link": "#"
+                },
+                {
+                    "text": "PHÒNG HÀNH CHÍNH QUẢN TRỊ",
+                    "link": "#"
+                },
+                {
+                    "text": "PHÒNG KẾ HOẠCH TỔNG HỢP",
+                    "link": "#"
+                },
+                {
+                    "text": "PHÒNG ĐIỀU DƯỠNG",
+                    "link": "#"
+                },
+                {
+                    "text": "KHOA CẤP CỨU",
+                    "link": "#"
+                }
+            ]
+        },
+        {
+            "text": "Lâm sàng",
+            "link": "#",
+            "children":
+            [
+                {
+                    "text": "KHOA Y HỌC CỔ TRUYỀN",
+                    "link": "#"
+                },
+                {
+                    "text": "KHOA NỘI TỔNG HỢP",
+                    "link": "#"
+                },
+                {
+                    "text": "KHOA KHÁM BỆNH",
+                    "link": "#"
+                },
+                {
+                    "text": "KHOA NGOẠI",
+                    "link": "#"
+                },
+                {
+                    "text": "KHOA GÂY MÊ HỒI SỨC",
+                    "link": "#"
+                }
+            ]
+        },
+        {
+            "text": "Cận lâm sàng",
+            "link": "#",
+            "children":
+            [
+                {
+                    "text": "KHOA XÉT NGHIỆM",
+                    "link": "#"
+                },
+                {
+                    "text": "KHOA CHẨN ĐOÁN HÌNH ẢNH",
+                    "link": "#"
+                }
+            ]
+        },
+        {
+            "text": "Các khoa khác",
+            "link": "#",
+            "children":
+            [
+                {
+                    "text": "KHOA KIỂM SOÁT NHIỄM KHUẨN",
+                    "link": "#"
+                },
+                {
+                    "text": "KHOA DƯỢC - VẬT TƯ",
+                    "link": "#"
+                },
+                {
+                    "text": "KHOA DINH DƯỠNG",
+                    "link": "#"
+                }
+            ]
+        },
+        {
+            "text": "Chi đoàn",
+            "link": "#",
+            "children":
+            []
+        }
+    ]
+},
+{
+    "text": "Văn bản",
+    "link": "#",
+    "children":
+    [
+        {
+            "text": "Công văn đến - đi",
+            "link": "#"
+        }
+    ]
+},
+{
+    "text": "Truyền thông",
+    "link": "#",
+    "children":
+    [
+        {
+            "text": "Công khai tài chính",
+            "link": "#",
+            "children":
+            [
+                {
+                    "text": "Công khai tài chính - Nội bộ",
+                    "link": "#"
+                }
+            ]
+        },
+        {
+            "text": "Tổ mua sắm",
+            "link": "#",
+            "children":
+            [
+                {
+                    "text": "Thông báo mời chào giá",
+                    "link": "#"
+                },
+                {
+                    "text": "Thông báo mời thầu",
+                    "link": "#"
+                }
+            ]
+        },
+        {
+            "text": "Cải cách hành chính",
+            "link": "#",
+            "children":
+            []
+        },
+        {
+            "text": "Tin tức",
+            "link": "#",
+            "children":
+            []
+        },
+        {
+            "text": "Sức khỏe",
+            "link": "#",
+            "children":
+            []
+        },
+        {
+            "text": "Thông tin khác",
+            "link": "#",
+            "children":
+            []
+        }
+    ]
+},
+{
+    "text": "Dịch vụ",
+    "link": "#",
+    "children":
+    [
+        {
+            "text": "Bảng giá dược",
+            "link": "#",
+            "children":
+            []
+        },
+        {
+            "text": "Bảng giá dịch vụ",
+            "link": "#",
+            "children":
+            []
+        }
+    ]
+},
+{
+    "text": "Hướng dẫn",
+    "link": "#",
+    "children":
+    [
+        {
+            "text": "Quy trình khám bệnh",
+            "link": "#",
+            "children":
+            []
+        }
+    ]
+},
+{
+    "text": "Tiện ích",
+    "link": "#",
+    "children":
+    [
+        {
+            "text": "Tra cứu hóa đơn điện tử",
+            "link": "#",
+            "children":
+            []
+        },
+        {
+            "text": "Hỏi đáp",
+            "link": "hoi-dap.html",
+            "children":
+            []
+        },
+        {
+            "text": "Đóng góp ý kiến",
+            "link": "#",
+            "children":
+            []
+        },
+        {
+            "text": "Thư viện",
+            "link": "#",
+            "children":
+            []
+        }
+    ]
+}
+]
