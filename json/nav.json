@@ -138,7 +138,8 @@
     [
         {
             "text": "Công văn đến - đi",
-            "link": "#"
+            "link": "#",
+            "children":[]
         }
     ]
 },
