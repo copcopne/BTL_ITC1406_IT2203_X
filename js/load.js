@@ -88,5 +88,4 @@ window.onload = function()
 {
     loadnav();
     goToTopButton();
-    addAction();
 }
