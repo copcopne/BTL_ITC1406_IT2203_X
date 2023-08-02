@@ -1,5 +1,5 @@
 function stickyNav () {
-
+    
 }
 function goToTopButton () {
     let button = document.getElementById("goTop");
@@ -9,6 +9,15 @@ function goToTopButton () {
         } else {
             button.style.display = "none";
         }
+        //javascript cho navigation
+        let n = document.getElementsByClassName("nav");
+        let sticky = n.offsetTop;
+        if(window.pageYOffset >= sticky) {
+            n.classList.add("sticky");
+        } else {
+            n.classList.remove("sticky");
+        }
+
     }
     button.addEventListener("click", () => {
         window.scrollTo({top: 0, behavior: 'smooth'});

@@ -1,0 +1,48 @@
+.thumbnail {
+    margin:0 auto;
+}
+.photos-container {
+    margin: auto;
+    position:relative;
+}
+.photo {
+    display: none;
+    width: 100%;
+    align-items: center;
+    border:1px solid red;
+}
+.photo > img {
+    width: 100%;
+}
+#next, #previous {
+    cursor: pointer;
+    position: absolute;
+    padding:20px;
+    opacity:.5;
+    border-radius: 0 20px 20px 0;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    font-weight: bolder;
+    font-size: 20px;
+    user-select: none;
+    transition: .6s ease;
+}
+#next {
+    right:0;
+    border-radius: 20px 0 0 20px;
+}
+#next:hover , #previous:hover {
+    background:#87b2d3;
+}
+@keyframes fade {
+    from {
+        opacity: .4;
+    }
+    to {
+        opactiy: 1;
+    }
+}
+.fade {
+    animation: fade 1.5s;
+}

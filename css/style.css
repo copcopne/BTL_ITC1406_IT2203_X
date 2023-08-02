@@ -1,4 +1,4 @@
-*{
+* {
     margin:0;
     box-sizing: border-box;
 }
@@ -7,7 +7,10 @@ html {
 }
 .flex {
     display: flex;
-   
+}
+main {
+    width:80%;
+    margin:0 auto;
 }
 a {
     text-decoration:none;
@@ -64,6 +67,7 @@ li {
     background: #D3E0EA;
     border-radius: 5px;
     overflow: hidden;
+    z-index: 999;
 }
 nav ul{
     display: flex;
@@ -78,6 +82,7 @@ nav ul{
     line-height: 50px;
     color: black;
     text-decoration: none;
+    transition: .5s ease;
 }
 /* Khi hover đến li, tô màu cho thẻ a */
 .nav ul li:hover > a {
@@ -118,6 +123,7 @@ nav ul{
 .menu li>ul li:last-child {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    border-bottom: none;
 }
 .menu li>ul li:last-child a{
     border-bottom-left-radius: 5px;
@@ -160,15 +166,6 @@ aside > left {
 }
 aside > right {  
     width:9.5%;
-}
-
-/*main*/
-main {
-    width:80%;
-    margin:0 auto;
-}
-.thumbnail {
-    margin:0 auto;
 }
 
 /*nút goTop*/
