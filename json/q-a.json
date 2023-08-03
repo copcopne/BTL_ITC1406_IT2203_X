@@ -1,0 +1,11 @@
+{
+    "questions":
+    [
+        {
+            "id":1,
+            "text":"Tra cứu hồ sơ khám như thế nào ?",
+            "date":"202383",
+            "isAnswered":false
+        }
+    ]
+}
