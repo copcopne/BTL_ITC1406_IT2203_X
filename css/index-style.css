@@ -14,7 +14,7 @@
 .photo > img {
     width: 100%;
 }
-#next, #previous {
+#next, #previous, #nextthongtin, #previousthongtin {
     cursor: pointer;
     position: absolute;
     padding:20px;
@@ -28,12 +28,19 @@
     user-select: none;
     transition: .6s ease;
 }
-#next {
+#nextthongtin, #previousthongtin {
+    background: #095996;
+}
+#next, #nextthongtin {
     right:0;
     border-radius: 20px 0 0 20px;
 }
-#next:hover , #previous:hover {
-    background:#87b2d3;
+#next:hover, #previous:hover {
+    background:#5699cc;
+}
+#nextthongtin:hover, #previousthongtin:hover {
+    opacity: 1;
+    color: whitesmoke;
 }
 @keyframes fade {
     from {
@@ -45,4 +52,102 @@
 }
 .fade {
     animation: fade 1.5s;
+}
+
+.options {
+    margin: 0;
+    justify-content: space-evenly;
+    background:#095996;
+    border-radius: 5px;
+}
+.option {
+    border: 3px solid red;
+    width: 26%;
+}
+.option > a {
+    padding: 20px;
+    display: flex;
+    width: 100%;
+    text-align: begin;
+
+}
+.option > .icon1 {
+    width: 30%;
+    font-size:40px;
+    text-align: end;
+}
+.option > .text {
+    width: 70%;
+}
+.tieude {
+    margin:.3rem 0 ;
+    text-align:center;
+    background-color:#095996;
+    color: whitesmoke;
+    font-family: cabin, sans-serif;
+    font-weight: bold;
+}
+.noidung {
+    font-size:large;
+    text-align:justify;
+}
+.thongtin-container {
+    padding : 0 0 1rem 0;
+    border:1px solid red;
+    overflow:hidden;
+    display: flex;
+    position: relative;
+}
+.thongtin {
+    padding:.5rem;
+    width: 25%;
+}
+.thongtin img {
+    width:100%;
+}
+.thongtin h3 {
+    margin:0 0 .6rem 0;
+    color:black;
+    text-decoration: underline;
+}
+.button {
+    padding:.5rem;
+    border:1px solid #095996;
+    color: black;
+    font-family: cabin, sans-serif;
+    font-weight: bold;
+}
+.khoa-container {
+    padding: 0 0 1rem 0;
+    border: 1px solid red;
+    overflow: hidden;
+}
+.khoa {
+    width: 33.3%;
+    position: relative;
+    border: 1px solid blue;
+}
+.khoa img {
+    width: 100%;
+}
+.khoa h3 {
+    position:absolute;
+    margin-left: 0;
+    margin-right: 0;
+    left: 0;
+    right: 0;
+    top:45%;
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+}
+.khoa > .button {
+    position:absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom:0;
+    text-align: center;
+    text-decoration: underline;
 }
