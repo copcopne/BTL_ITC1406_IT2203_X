@@ -161,10 +161,10 @@ nav ul{
 }
 
 /*aside*/
-aside > left {  
+aside > .left {  
     width:9.5%;
 }
-aside > right {  
+aside > .right {  
     width:9.5%;
 }
 
