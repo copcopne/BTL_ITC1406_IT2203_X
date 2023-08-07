@@ -186,6 +186,7 @@ aside > .right {
     position: relative;
     cursor: pointer;
     transition: 0.6s;
+    font-weight:bold;
 }
 #goTop > span:after {
     content:'\25B2';
