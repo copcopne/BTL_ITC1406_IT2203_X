@@ -54,5 +54,4 @@ article h1{
 }
 .arrow-rotate{
     transform:rotate(90deg);
-    z-index: 0;
 }
