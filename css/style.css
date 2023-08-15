@@ -10,7 +10,7 @@ html {
 }
 main {
     width:80%;
-    margin:0 auto;
+    margin:.5rem auto;
 }
 a {
     text-decoration:none;
@@ -65,7 +65,7 @@ li {
 .nav{
     margin: 5px 10%;
     background: #D3E0EA;
-    border-radius: 5px;
+    border-radius: 10px;
     overflow: hidden;
     z-index: 999;
 }
@@ -158,14 +158,6 @@ nav ul{
     position: sticky;
     top: 0;
     width: 100%;
-}
-
-/*aside*/
-aside > .left {  
-    width:9.5%;
-}
-aside > .right {  
-    width:9.5%;
 }
 
 /*nút goTop*/
