@@ -1,4 +1,38 @@
 [{
+    "text": "Bệnh viện",
+    "link": "index.html",
+    "children":
+    [
+        {
+            "text": "Giới thiệu chung",
+            "link": "#",
+            "children":
+            [
+                {
+                    "text": "Lịch sử hình thành",
+                    "link": "#"
+                },
+                {
+                    "text": "Cơ cấu tổ chức",
+                    "link": "#"
+                }
+            ]
+        },
+        {
+            "text": "Lịch làm việc",
+            "link": "#",
+            "children":
+            []
+        },
+        {
+            "text": "Đăng ký khám bệnh online",
+            "link": "dang-ky.html",
+            "children":
+            []
+        }
+    ]
+},
+{
     "text": "Hoạt động",
     "link": "#",
     "children":

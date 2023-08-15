@@ -2,7 +2,7 @@ function loadnav()
 {
     fetch("json/nav.json").then(res=>res.json()).then(data=>
         {
-            let n=2;
+            let n=1;
             for(let c of data)
             {
                 let h="";
