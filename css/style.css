@@ -1,6 +1,10 @@
 * {
     margin:0;
     box-sizing: border-box;
+    font-family: cabin, sans-serif;
+}
+span, address {
+    font-family:'Times New Roman', Times, serif;
 }
 html {
     scroll-behavior: smooth;

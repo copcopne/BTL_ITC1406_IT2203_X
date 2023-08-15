@@ -1,22 +1,40 @@
 .thumbnail {
-    margin:0 auto;
+    margin: 2rem auto;
 }
 .photos-container {
-    margin: auto;
-    position:relative;
-}
-.photo {
-    display: none;
-    width: 100%;
-    align-items: center;
-    border:1px solid red;
+    position: relative;
 }
 .photo > img {
     width: 100%;
 }
+.photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+.sliderBtn {
+    text-align: center;
+}
+.nut {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    margin: .5rem .5rem 0;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    background: #5699cc;
+    transition: .5s ease;
+}
+.active {
+    background: #095996;
+}
 #next, #previous, #nextthongtin, #previousthongtin {
     cursor: pointer;
     position: absolute;
+    color:white;
+    background: #5699cc;
     padding:20px;
     opacity:.5;
     border-radius: 0 20px 20px 0;
@@ -27,6 +45,7 @@
     font-size: 20px;
     user-select: none;
     transition: .6s ease;
+    z-index: 10;
 }
 #nextthongtin, #previousthongtin {
     background: #095996;
@@ -36,7 +55,8 @@
     border-radius: 20px 0 0 20px;
 }
 #next:hover, #previous:hover {
-    background:#5699cc;
+    background:#095996;
+    color:whitesmoke;
 }
 #nextthongtin:hover, #previousthongtin:hover {
     opacity: 1;
@@ -57,12 +77,17 @@
 .options {
     margin: 0;
     justify-content: space-evenly;
-    background:#095996;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 .option {
-    border: 3px solid red;
+    border: 1px solid gray;
+    margin-right:5px;
+    border-radius: 10px;
+    background:#095996;
     width: 26%;
+}
+.option:last-child {
+    margin-right:unset;
 }
 .option > a {
     padding: 20px;
@@ -81,19 +106,22 @@
 }
 .tieude {
     margin:.3rem 0 ;
+    padding: .6rem 0;
     text-align:center;
     background-color:#095996;
+    border: 1px solid gray;
+    border-radius: 10px;
     color: whitesmoke;
     font-family: cabin, sans-serif;
     font-weight: bold;
 }
 .noidung {
+    margin:.5rem 0;
     font-size:large;
     text-align:justify;
 }
 .thongtin-container {
     padding : 0 0 1rem 0;
-    border:1px solid red;
     overflow:hidden;
     display: flex;
     position: relative;
@@ -119,8 +147,8 @@
 }
 .khoa-container {
     padding: 0 0 1rem 0;
-    border: 1px solid red;
     overflow: hidden;
+    flex: 3;
 }
 .khoa {
     width: 33.3%;
@@ -150,4 +178,42 @@
     bottom:0;
     text-align: center;
     text-decoration: underline;
+}
+.tintuc-container {
+    margin: .5rem 0 0 0;
+    padding: 0 0 .5rem 0;
+}
+.tin {
+    padding:.5rem;
+    border: 3px solid #095996;
+    border-radius: 20px 20px 20px 20px;
+    margin: .5rem 0;
+}
+.tin img {
+    width:100%;
+    height: 400px;
+}
+.t-left {
+    width: 50%;
+}
+.t-right {
+    width: 50%;
+}
+.tin span > a {
+    text-decoration: underline;
+    color: #095996;
+}
+.tin h2 {
+    margin: 10% 1rem 0 .5rem;
+    text-align: center;
+    font-size: 26px;
+    color: #095996;
+    font-family: cabin, sans-serif;
+}
+.tin h3 {
+    margin: 1.5rem 1rem;
+    text-align: justify;
+    font-size: 22px;
+    color:#4e4c4c;
+    font-style: italic;
 }

@@ -1,30 +1,44 @@
-// hien photo
-let activeSlide = 1;
-showSlide(activeSlide);
-function showSlide(photoNumber) {
-    let ps = document.getElementsByClassName("photos");
-    // neu an next o tam hinh cuoi thi se quay ve tam dau
-    if (photoNumber > ps.length) {
-        activeSlide = 1;
-    }
-    // neu an previous o tam hinh dau thi se quay ve hinh cuoi
-    if (photoNumber < 1 ) {
-        activeSlide = ps.length;
-    }
-    // an hinh chua hien
-    for (let i = 0; i < ps.length; ++i) {
-        ps[i].style.display = "none";
-    }
-    // cho hien anh va set nut
-    ps[photoNumber - 1].style.display = "block";
-}
-function addAction() {
-    let n = document.getElementById("next");
-    let p = document.getElementById("previous");
-    n.addEventListener("click", () => {
-        showSlide(activeSlide + 1);
+$(document).ready(function () {
+    let num = $(".photo").length; // so luong hinh
+    let h = "";
+    for(let i = 0; i < num; ++i)
+        h += `<button class="nut" rel=${i + 1}></button>`;
+    $(".sliderBtn").html(h); // gan nut dua theo so hinh
+    $(".photo:not(:first-child)").hide(); // an 2 hinh con lai chua hinh dau tien
+    $(".nut:first-child").addClass("active"); // gan class active cho nut dau tien
+    $(".photos-container").height($(".photo img").height() + 5); // thiet lap chieu cao cho the photos-container
+    let show = (current) => {
+        $(".photo").hide(); // an toan bo hinh
+        $(".photo").eq(current).show(); // hien hinh thu current
+        $(".nut").removeClass("active"); // go class active cho nut hien tai
+        $(".nut").eq(current).addClass("active"); // them class active cho nut thu current
+    };
+    let current = 0; // anh dau tien
+    $("#next").click(function () {
+        current++;
+        if (current === num) // neu current vuot qua so luong anh
+            current = 0; // set current ve lai thanh vi tri anh dau tien
+        show(current);
+        clearInterval(timer); // xoa thoi gian cho hinh tu dong chuyen
+        runSlider(); // thiet lap lai tu dong chuyen
     });
-    p.addEventListener("click", () => {
-        showSlide(activeSlide - 1);
+    $("#previous").click(function () {
+        current--;
+        if (current < 0)
+            current = num - 1; // set current ve vi tri anh cuoi cung
+        show(current);
     });
-}
+    $(".nut").click(function() {
+        current = parseInt($(this).attr("rel") - 1);
+        show(current);
+        clearInterval(timer); // xoa thoi gian cho hinh tu dong chuyen
+        runSlider(); // thiet lap lai tu dong chuyen
+    });
+    let timer = null;
+    let runSlider = () => {
+        timer = setInterval(() => {
+            $("#next").click();
+        }, 3000); // 3 giay chuyen anh 1 lan
+    };
+    runSlider();
+});

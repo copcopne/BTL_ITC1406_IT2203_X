@@ -8,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="src/favicon.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,41 +48,25 @@
     <nav>
         <div class="nav">
             <ul class="menu">
-                <li>
-                    <a href="index.html">Bệnh viện</a>
-                    <ul class="submenu1">
-                        <li><a href="#">Giới thiệu chung</a>
-                            <ul class="submenu2">
-                                <li><a href="#">Lịch sử hình thành</a></li>
-                                <li><a href="#">Cơ cấu tổ chức</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Lịch làm việc</a></li>
-                        <li><a href="#">Đăng ký khám bệnh online</a></li>
-                    </ul>
-                </li>
             </ul>
         </div>
     </nav>
-    <aside>
-        <div class="left"></div>
-        <div class="right"></div>
-    </aside>
     <main>
         <section class="thumbnail">
             <div class="photos-container">
-                <div class="photo fade">
-                    <img src="src/slideshow/1.jpg" alt="Bệnh viện Mở TPHCM" />
+                <div class="photo animate__animated">
+                    <img src="src/slideshow/1.png" alt="Bệnh viện Mở TPHCM" />
                 </div>
-                <div class="photo fade">
-                    <img src="src/slideshow/2.jpg" alt="Bệnh viện Mở TPHCM" />
+                <div class="photo animate__animated">
+                    <img src="src/slideshow/2.png" alt="Bệnh viện Mở TPHCM" />
                 </div>
-                <div class="photo fade">
-                    <img src="src/slideshow/3.jpg" alt="Bệnh viện Mở TPHCM" />
+                <div class="photo animate__animated">
+                    <img src="src/slideshow/3.png" alt="Bệnh viện Mở TPHCM" />
                 </div>
                 <a id="next" href="javascript:;">&#10095;</a>
                 <a id="previous" href="javascript:;">&#10094;</a>
             </div>
+            <div class="sliderBtn"></div>
         </section>
         <section>
             <div class="options flex">
@@ -211,7 +196,22 @@
             <div class="tieude">
                 <h1>KHOA - PHÒNG</h1>
             </div>
-            <div class="khoa-container">
+            <div class="khoa-container flex">
+                <div class="khoa">
+                    <img src="src/background/10130-300x188.jpg" alt="" />
+                    <h3>PHÒNG TỔ CHỨC - HÀNH CHÍNH QUẢN TRỊ</h3>
+                    <a class="button" href="#">XEM THÊM</a>
+                </div>
+                <div class="khoa">
+                    <img src="src/background/10130-300x188.jpg" alt="" />
+                    <h3>PHÒNG TỔ CHỨC - HÀNH CHÍNH QUẢN TRỊ</h3>
+                    <a class="button" href="#">XEM THÊM</a>
+                </div>
+                <div class="khoa">
+                    <img src="src/background/10130-300x188.jpg" alt="" />
+                    <h3>PHÒNG TỔ CHỨC - HÀNH CHÍNH QUẢN TRỊ</h3>
+                    <a class="button" href="#">XEM THÊM</a>
+                </div>
                 <div class="khoa">
                     <img src="src/background/10130-300x188.jpg" alt="" />
                     <h3>PHÒNG TỔ CHỨC - HÀNH CHÍNH QUẢN TRỊ</h3>
@@ -219,10 +219,40 @@
                 </div>
             </div>
         </section>
-        <section class="tintuc"></section>
-        <section class="lienket"></section>
-        <section class="review"></section>
-        <section class="cauhoithuonggap"></section>
+        <section class="tintuc">
+            <div class="tieude">
+                <h1>TIN TỨC TỪ SỞ Y TẾ TPHCM</h1>
+            </div>
+            <div class="tintuc-containter">
+                <div class="tin flex">
+                    <div class="t-left">
+                        <img src="/src/background/tin001.png" alt="" />
+                    </div>
+                    <div class="t-right">
+                        <h2>Sở Y tế TP.HCM ra mắt “App cổng thông tin điện tử của ngành y tế” trên điện thoại thông minh</h2>
+                        <h3>Sau thời gian thiết kế và chạy thử nghiệm, vừa qua <span><a href="https://medinet.hochiminhcity.gov.vn/Default.aspx" target="_blank">Sở Y tế TP.HCM</a></span> đã chính thức ra mắt app Cổng thông tin điện tử trên điện thoại di động nhằm tạo điều kiện thuận lợi cho người dân và cán bộ y tế dễ dàng tra cứu thông tin của ngành.... <span><a href="#">xem thêm</a></span></h3>
+                    </div>
+                </div>
+                <div class="tin flex">
+                    <div class="t-left">
+                        <h2>Sở Y tế TP.HCM triển khai ứng dụng “Tra cứu nơi khám, chữa bệnh” trên điện thoại thông minh</h2>
+                        <h3>Sau hơn 9 tháng xây dựng phần mềm ứng dụng tích hợp trên điện thoại thông minh giúp người dân dễ dàng tra cứu và chọn lựa nơi khám chữa bệnh phù hợp, <span><a href="https://medinet.hochiminhcity.gov.vn/Default.aspx" target="_blank">Sở Y tế TP.HCM</a></span> bắt đầu triển khai thử nghiệm nhằm đánh giá mức độ tiện ích của ứng dụng... <span><a href="#">xem thêm</a></span></h3>
+                    </div>
+                    <div class="t-right">
+                        <img src="/src/background/tin002.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="lienket">
+
+        </section>
+        <section class="review">
+
+        </section>
+        <section class="cauhoithuonggap">
+
+        </section>
         <button id="goTop" title="Go to top"><span>VỀ ĐẦU TRANG</span></button>
     </main>
     <footer class = "flex">
