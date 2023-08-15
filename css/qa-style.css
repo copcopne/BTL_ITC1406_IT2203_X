@@ -4,7 +4,7 @@
 }
 article{
     padding: 1rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 article h1{
     color:#146C94;
@@ -16,6 +16,7 @@ article h1{
 .faq{
     font-size: 20px;
     font-weight: 400;
+    margin-top: 1rem;
 }
 .faq li{
     background: #D3E0EA;
@@ -53,4 +54,5 @@ article h1{
 }
 .arrow-rotate{
     transform:rotate(90deg);
+    z-index: 0;
 }
