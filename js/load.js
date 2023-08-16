@@ -70,22 +70,13 @@ function goToTopButton () {
         } else {
             button.style.display = "none";
         }
-        // //javascript cho navigation
-        // let n = document.getElementsByClassName("nav");
-        // let sticky = n.offsetTop;
-        // if (window.pageYOffset >= sticky) {
-        //     n.classList.add("sticky");
-        // } else {
-        //     n.classList.remove("sticky");
-        // }
-
     }
     button.addEventListener("click", () => {
         window.scrollTo({top: 0, behavior: 'smooth'});
     });
 }
 function stickynav() {
-    let stickyTop =$(".sticky").offset().top + 55;
+    let stickyTop =$(".sticky").offset().top + 5;
     $(window).scroll(function () {
         let = windowTop = $(window).scrollTop();
         if (stickyTop < windowTop) {
