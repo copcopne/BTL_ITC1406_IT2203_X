@@ -18,5 +18,49 @@ article h1{
     font-size: 20px;
     font-weight: 400;
     margin-top: 1rem;
-    
+    background-color: #D3E0EA;
+    border-radius: 10px;
+    padding: 1rem;
+}
+.reg > div{
+    padding: 0.5rem;
+}
+.reg input:not(.submit),.reg select,.reg textarea{
+    width: 100%;
+    margin-top: 0.5rem;
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding: 1rem;
+    background-color: white;
+}
+.reg input:focus{
+    border: 2px solid #146C94;
+    outline: none;
+}
+.reg label::after{
+    content:" *";
+    color: red;
+}
+
+
+.double{
+    display: flex;
+}
+.double > div{
+    width: 50%;
+}
+.double > div:first-child{
+    margin-right: 1rem;
+}
+
+.submit{
+    padding: 1rem 2rem;
+    border: 2px solid #146C94;
+    border-radius: 20px;
+    background-color: #146C94;
+    color: #D3E0EA;
+    cursor: pointer;
+}
+.submit:hover{
+    background-color: #428ad1;
 }

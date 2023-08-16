@@ -54,10 +54,54 @@
             <h1>ĐĂNG KÝ ONLINE</h1>
             <div class = "reg">
                 <div>
-                    <p>Họ và tên bệnh nhân</p>
-                    <input type="text">
+                    <label for="name">Họ và tên bệnh nhân</label>
+                    <input type="text" id="name">
                 </div>
-                
+                <div class = "double">
+                    <div>
+                        <label for="dateofbirth">Ngày sinh</label>
+                        <input type="date" id="dateofbirth">
+                    </div>
+                    <div style="width: 50%;">
+                        <label for="phonenum">Số điện thoại</label>
+                        <input type="text" id="phonenum">
+                    </div>
+                </div>
+                <div>
+                    <label for="name">Khoa phòng cần khám</label>
+                    <select name="Department" id="Department">
+                        <option value=""></option>
+                        <option value="Phòng Khám nội 1">Phòng Khám nội 1</option>
+                        <option value="Phòng Khám nội 2">Phòng Khám nội 2</option>
+                        <option value="Phòng Khám nội 3">Phòng Khám nội 3</option>
+                        <option value="Phòng Khám nội 4">Phòng Khám nội 4</option>
+                        <option value="Phòng Khám nội 5">Phòng Khám nội 5</option>
+                        <option value="Phòng Khám nội 6">Phòng Khám nội 6</option>
+                        <option value="Phòng khám nội 7">Phòng khám nội 7</option>
+                        <option value="Phòng Khám Nhi">Phòng Khám Nhi</option>
+                        <option value="Phòng Khám TMH">Phòng Khám TMH</option>
+                        <option value="Phòng Khám RHM">Phòng Khám RHM</option>
+                        <option value="Phòng Khám Sản phụ khoa">Phòng Khám Sản phụ khoa</option>
+                        <option value="Phòng Khám Ngoại">Phòng Khám Ngoại</option>
+                        <option value="Phòng khám Nội DV 107">Phòng khám Nội DV 107</option>
+                        <option value="Phòng khám mắt">Phòng khám mắt</option>
+                    </select>
+                </div>
+                <div class = "double">
+                    <div>
+                        <label for="date">Đăng ký khám lúc</label>
+                        <input type="date" id="date">
+                    </div>
+                    <div>
+                        <label for="hour">Giờ</label>
+                        <input type="text" id="hour" placeholder="00:00">
+                    </div>
+                </div>
+                <div>
+                    <label for="problem">Vấn đề cần khám</label>
+                    <textarea id="problem" style="height:200px"></textarea>
+                </div>
+                <input class="submit" type="button" value="Gửi">
             </div>
         </article>
     </main>
