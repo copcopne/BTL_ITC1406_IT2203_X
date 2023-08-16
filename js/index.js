@@ -3,18 +3,24 @@ $(document).ready(function () {
     function checkImg(url) { // ham kiem tra neu ton tai anh trong source
         let img = new Image(); // tao bien img
         img.src = url; // gan src cho anh
-        return img.height !== 0; // neu khong co anh trong thu muc thi chieu cao anh se = 0 => tra ve false va nguoc lai
+        return img.height ; // neu khong co anh trong thu muc thi chieu cao anh se = 0 => tra ve false va nguoc lai
     }
     let x = 1; // anh dau tien
     let hx ="";
-    while(checkImg(`src/slideshow/${x}.png`) === true) {
+    let len = 0;
+    while(checkImg(`src/slideshow/${x}.png`) !== 0) {
         hx += `
             <div class="photo animate__animated">
-                <img src="src/slideshow/${x++}.png" alt="Bệnh viện Mở TPHCM" />]
+                <img src="src/slideshow/${x}.png" alt="Bệnh viện Mở TPHCM" />
             </div>
         `;
+        let temp = checkImg(`src/slideshow/${x}.png`);
+        if (len < temp)
+            len = temp;
+        x++;
     }
     $(".photos-container").html(hx);
+    $(".photos-container").height((len * 0.75) + 5); // thiet lap chieu cao cho the photos-container
     hx =""; // reset lai bien xem coi no co chay ko :)))
     hx += `
         <a id="next" href="javascript:;">&#10095;</a>
@@ -31,7 +37,7 @@ $(document).ready(function () {
     $(".sliderBtn").html(h); // gan nut dua theo so hinh
     $(".photo:not(:first-child)").hide(); // an 2 hinh con lai chua hinh dau tien
     $(".nut:first-child").addClass("active"); // gan class active cho nut dau tien
-    $(".photos-container").height($(".photo img").height() + 5); // thiet lap chieu cao cho the photos-container
+    //$(".photos-container").height($(".photo img").height() + 5); // thiet lap chieu cao cho the photos-container
     let show = (current) => {
         $(".photo").hide(); // an toan bo hinh
         $(".photo").eq(current).show(); // hien hinh thu current
