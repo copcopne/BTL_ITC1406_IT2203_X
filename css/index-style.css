@@ -84,7 +84,12 @@
     margin-right:5px;
     border-radius: 10px;
     background:#095996;
-    width: 26%;
+    width: 100%;
+    position:relative;
+    transition: .5s ease;
+}
+.option:hover {
+    background:#4a997b;
 }
 .option:last-child {
     margin-right:unset;
@@ -123,7 +128,6 @@
 .thongtin-container {
     padding : 0 0 1rem 0;
     overflow:hidden;
-    display: flex;
     position: relative;
 }
 .thongtin {
@@ -148,15 +152,30 @@
 .khoa-container {
     padding: 0 0 1rem 0;
     overflow: hidden;
-    flex: 3;
+    flex-wrap: wrap;
 }
 .khoa {
-    width: 33.3%;
+    width: 25%;
     position: relative;
-    border: 1px solid blue;
+    border-right: 2px solid gray;
+}
+.khoa:last-child {
+    border-right: none;
 }
 .khoa img {
     width: 100%;
+    transition: .5s ease;
+}
+.khoa .layer {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background: black;
+    opacity:.3;
+    transition: .5s ease;
+    z-index: 10;
 }
 .khoa h3 {
     position:absolute;
@@ -168,6 +187,7 @@
     text-align: center;
     color: white;
     text-decoration: underline;
+    z-index: 15;
 }
 .khoa > .button {
     position:absolute;
@@ -178,6 +198,8 @@
     bottom:0;
     text-align: center;
     text-decoration: underline;
+    border: none;
+    z-index: 15;
 }
 .tintuc-container {
     margin: .5rem 0 0 0;

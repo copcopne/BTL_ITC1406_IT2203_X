@@ -43,7 +43,19 @@ function runSlide() {
     runSlider();
 }
 
+function runHover() {
+    $(".layer").mouseenter(function() {
+        $(this).css("opacity",".5");
+        $(this).siblings("img").css("transform","scale(0.9)");
+        //$(this > "img").css("translate")
+    });
+    $(".khoa").mouseleave(function() {
+        $(".layer").css("opacity",".3");
+        $("img").css("transform","scale(1)");
+    });
+}
 
 $(document).ready(function () {
     runSlide();
+    runHover();
 });
