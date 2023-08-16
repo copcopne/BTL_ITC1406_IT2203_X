@@ -1,4 +1,29 @@
 $(document).ready(function () {
+    
+    function checkImg(url) { // ham kiem tra neu ton tai anh trong source
+        let img = new Image(); // tao bien img
+        img.src = url; // gan src cho anh
+        return img.height !== 0; // neu khong co anh trong thu muc thi chieu cao anh se = 0 => tra ve false va nguoc lai
+    }
+    let x = 1; // anh dau tien
+    let hx ="";
+    while(checkImg(`src/slideshow/${x}.png`) === true) {
+        hx += `
+            <div class="photo animate__animated">
+                <img src="src/slideshow/${x++}.png" alt="Bệnh viện Mở TPHCM" />]
+            </div>
+        `;
+    }
+    $(".photos-container").html(hx);
+    hx =""; // reset lai bien xem coi no co chay ko :)))
+    hx += `
+        <a id="next" href="javascript:;">&#10095;</a>
+        <a id="previous" href="javascript:;">&#10094;</a>
+    `;
+    $(".photos-container").append(hx); // them vao sau 
+
+
+
     let num = $(".photo").length; // so luong hinh
     let h = "";
     for(let i = 0; i < num; ++i)
@@ -41,4 +66,5 @@ $(document).ready(function () {
         }, 3000); // 3 giay chuyen anh 1 lan
     };
     runSlider();
+
 });
