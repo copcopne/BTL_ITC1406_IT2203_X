@@ -16,16 +16,9 @@
     <script src="js/load.js"></script>
     <script src="js/checkinput.js"></script>
     <script>
-    $(document).ready(function(){
-        $(".submit").on("click",function(){
-            let name = $("#name").val();
-            let birthdate = $("#dateofbirth").val();
-            let phonenum = $("#phonenum").val();
-            let department = $("department option:selected").val();
-            alert(department);
-        })
+    $(document).ready(()=>{
+        $("*[required]").parent().find("label").addClass("required");
     })
-    
     </script>
 </head>
 <body>
@@ -63,26 +56,26 @@
         </div>
     </nav>
     <main>
-        <article>
+        <section>
             <h1>ĐĂNG KÝ ONLINE</h1>
-            <div class = "reg">
+            <form class = "reg">
                 <div>
                     <label for="name">Họ và tên bệnh nhân</label>
-                    <input type="text" id="name">
+                    <input type="text" id="name" required/>
                 </div>
                 <div class = "double">
                     <div>
                         <label for="dateofbirth">Ngày sinh</label>
-                        <input type="date" id="dateofbirth">
+                        <input type="date" id="dateofbirth" required>
                     </div>
                     <div style="width: 50%;">
                         <label for="phonenum">Số điện thoại</label>
-                        <input type="number" onkeypress='return event.charCode >= 48 && event.charCode <= 57' id="phonenum"></input>
+                        <input type="number" onkeypress='return event.charCode >= 48 && event.charCode <= 57' id="phonenum" required></input>
                     </div>
                 </div>
                 <div>
                     <label for="department">Khoa phòng cần khám</label>
-                    <select name="department" id="department">
+                    <select name="department" id="department" required>
                         <option value=""></option>
                         <option value="Phòng Khám nội 1">Phòng Khám nội 1</option>
                         <option value="Phòng Khám nội 2">Phòng Khám nội 2</option>
@@ -103,20 +96,20 @@
                 <div class = "double">
                     <div>
                         <label for="date">Đăng ký khám lúc</label>
-                        <input type="date" id="date">
+                        <input type="date" id="date" required>
                     </div>
                     <div>
                         <label for="hour">Giờ</label>
-                        <input type="text" id="hour" placeholder="00:00">
+                        <input type="time" id="hour" required>
                     </div>
                 </div>
                 <div>
                     <label for="problem">Vấn đề cần khám</label>
-                    <textarea id="problem" style="height:200px"></textarea>
+                    <textarea id="problem" style="height:200px" required></textarea>
                 </div>
                 <input class="submit" type="button" value="Gửi">
-            </div>
-        </article>
+            </form>
+        </section>
     </main>
 </body>
 </html>
