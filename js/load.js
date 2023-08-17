@@ -73,12 +73,12 @@ function loadscript() {
         if (stickyTop < windowTop) {
             $(".sticky").css("position", "fixed");
             $("#goTop").show("slow");
-            $(".thumbnail").css("padding-top","50px");
+            $("main > section:first-child").css("padding-top","50px");
         }
         else {
             $(".sticky").css("position", "relative");  
             $("#goTop").hide("slow"); 
-            $(".thumbnail").css("padding-top","unset");
+            $("main > section:first-child").css("padding-top","unset");
         }
     }); 
 }
