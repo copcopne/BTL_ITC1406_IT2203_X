@@ -62,20 +62,8 @@ function loadnav()
             }
         })
 }
-// function goToTopButton () {
-//     let button = document.getElementById("goTop");
-//     window.onscroll = function () {
-//         if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-//             button.style.display = "block";
-//         } else {
-//             button.style.display = "none";
-//         }
-//     }
-//     button.addEventListener("click", () => {
-//         window.scrollTo({top: 0, behavior: 'smooth'});
-//     });
-// }
 function loadscript() {
+    $("#goTop").hide();
     let stickyTop =$(".sticky").offset().top;
     $("#goTop").click(function() {
         $(window).scrollTop(0);
@@ -96,8 +84,6 @@ function loadscript() {
 }
 window.onload = function()
 {
-    $("#goTop").hide();
     loadnav();
-    //goToTopButton();
     loadscript();
 }
