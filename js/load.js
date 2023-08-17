@@ -62,33 +62,42 @@ function loadnav()
             }
         })
 }
-function goToTopButton () {
-    let button = document.getElementById("goTop");
-    window.onscroll = function () {
-        if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-            button.style.display = "block";
-        } else {
-            button.style.display = "none";
-        }
-    }
-    button.addEventListener("click", () => {
-        window.scrollTo({top: 0, behavior: 'smooth'});
+// function goToTopButton () {
+//     let button = document.getElementById("goTop");
+//     window.onscroll = function () {
+//         if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+//             button.style.display = "block";
+//         } else {
+//             button.style.display = "none";
+//         }
+//     }
+//     button.addEventListener("click", () => {
+//         window.scrollTo({top: 0, behavior: 'smooth'});
+//     });
+// }
+function loadscript() {
+    let stickyTop =$(".sticky").offset().top;
+    $("#goTop").click(function() {
+        $(window).scrollTop(0);
     });
-}
-function stickynav() {
-    let stickyTop =$(".sticky").offset().top + 5;
     $(window).scroll(function () {
         let = windowTop = $(window).scrollTop();
         if (stickyTop < windowTop) {
             $(".sticky").css("position", "fixed");
+            $("#goTop").show("slow");
+            $(".thumbnail").css("padding-top","50px");
         }
-        else
+        else {
             $(".sticky").css("position", "relative");  
+            $("#goTop").hide("slow"); 
+            $(".thumbnail").css("padding-top","unset");
+        }
     }); 
 }
 window.onload = function()
 {
+    $("#goTop").hide();
     loadnav();
-    goToTopButton();
-    stickynav();
+    //goToTopButton();
+    loadscript();
 }
