@@ -63,6 +63,16 @@ function loadnav()
         })
 }
 function loadhtmlstruct() {
+    // man hinh load
+    $("main").before(`
+        <div class="loading"></div>
+    `);
+    setTimeout(()=>{$(".loading").addClass("fadeoutClass");},1000);
+    setTimeout(function() {
+        $(".loading").hide();
+        $(".loading").removeClass("fadeoutClass");
+    }, 1500);
+
     $("body").prepend(`
         <header class="head flex">
         <div class ="l-head flex logo">
@@ -98,7 +108,9 @@ function loadhtmlstruct() {
             </div>
         </nav>
     `);
-    $("main").append(`<button id="goTop" title="Go to top"><span>TOP</span></button>`);
+    $("main").append(`
+    <button id="goTop" title="Go to top"><span>TOP</span></button>
+    `);
     $("main").after(`
         <footer class = "flex">
             <p>
@@ -111,7 +123,8 @@ function loadhtmlstruct() {
                 Cơ sở chính: 371 Nguyễn Kiệm, Phường 3, Gò Vấp, Thành phố Hồ Chí Minh
             </p>
         </footer>
-`);
+    `);
+
     $("#goTop").hide();
     let stickyTop =$(".sticky").offset().top;
     if( ($("footer").offset().top + 100) < $(document).height()) {
@@ -120,6 +133,7 @@ function loadhtmlstruct() {
     $("#goTop").click(function() {
         $(window).scrollTop(0);
     });
+    
     $(window).scroll(function () {
         let = windowTop = $(window).scrollTop();
         if (stickyTop < windowTop) {
@@ -130,12 +144,12 @@ function loadhtmlstruct() {
         else {
             $(".sticky").css("position", "relative");  
             $("#goTop").hide("slow"); 
-            $("main > section:first-child").css("padding-top","unset");
+            $("main > :first-child").css("padding-top","unset");
         }
     }); 
 }
 window.onload = function()
 {
-    loadnav();
     loadhtmlstruct();
+    loadnav();
 }

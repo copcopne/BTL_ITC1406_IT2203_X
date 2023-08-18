@@ -43,7 +43,7 @@ function runSlide() {
     runSlider();
 }
 
-function runHover() {
+function runScript() {
     $(".layer").mouseenter(function() {
         $(this).css("opacity",".5");
         $(this).siblings("img").css("transform","scale(0.9)");
@@ -57,5 +57,5 @@ function runHover() {
 
 $(document).ready(function () {
     runSlide();
-    runHover();
+    runScript();
 });

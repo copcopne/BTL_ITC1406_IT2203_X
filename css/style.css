@@ -201,14 +201,6 @@ nav ul{
     right: 0px;
     opacity: 1; 
 }
-@keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
 @keyframes fadeout {
     from {
         opacity: 1;
@@ -217,10 +209,7 @@ nav ul{
         opacity: 0;
     }
 }
-.fadein {
-    animation: fadein .5s;
-}
-.fadeout {
+.fadeoutClass {
     animation: fadeout .5s;
 }
 
@@ -243,4 +232,18 @@ footer p{
     text-align: center;
     font-weight: bold;
     font-size: small;
+}
+.loading {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    bottom: 0;
+    left:0;
+    right: 0;
+    background:url("/src/favicon.png");
+    background-position: center;
+    background-size:200px;
+    background-repeat: no-repeat;
+    background-color: #F6F5F5;
+    transition: 1s ease;
 }

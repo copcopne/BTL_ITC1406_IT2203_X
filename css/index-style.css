@@ -158,6 +158,7 @@
     width: 25%;
     position: relative;
     border-right: 2px solid gray;
+    cursor: pointer;
 }
 .khoa:last-child {
     border-right: none;
