@@ -7,7 +7,11 @@ $(document).ready(function(){
         {
             if(i.hasAttribute('required') && i.value.length == 0)
             {
+                i.classList.add("alert");
                 i.focus();
+                i.addEventListener('animationend',() => {
+                    i.classList.remove("alert");
+                })
                 valid = false;
                 break;
             }
