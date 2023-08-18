@@ -1,4 +1,5 @@
 function runSlide() {
+    $(".photos-container").height($(".photo img").height() + 5); // thiet lap chieu cao cho the photos-container
     let num = $(".photo").length; // so luong hinh
     let h = "";
     for(let i = 0; i < num; ++i)
@@ -6,7 +7,6 @@ function runSlide() {
     $(".sliderBtn").html(h); // gan nut dua theo so hinh
     $(".photo:not(:first-child)").hide(); // an 2 hinh con lai chua hinh dau tien
     $(".nut:first-child").addClass("active"); // gan class active cho nut dau tien
-    $(".photos-container").height($(".photo img").height() + 5); // thiet lap chieu cao cho the photos-container
     let show = (current) => {
         $(".photo").hide(); // an toan bo hinh
         $(".photo").eq(current).show(); // hien hinh thu current

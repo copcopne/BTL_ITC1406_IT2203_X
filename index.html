@@ -13,7 +13,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script>
+        wow = new WOW({
+            boxClass:     'wow',      // default
+            animateClass: 'animate__animated', // default
+            offset:       0,          // default
+            mobile:       true,       // default
+            live:         true        // default
+        })
+        wow.init();
+    </script>
     <script src="js/index.js"></script>
     <script src="js/load.js"></script>
 </head>
@@ -21,7 +32,7 @@
     <div class="loading"></div>
     <main>
         <section class="thumbnail">
-            <div class="photos-container">
+            <div class="photos-container wow animate__zoomIn">
                 <div class="photos-container">
                     <div class="photo animate__animated">
                         <img src="src/slideshow/1.png" alt="Bệnh viện Mở TPHCM" />
@@ -50,7 +61,7 @@
                     </a>
                 </div>
                 <div class="option">
-                    <a href="#">
+                    <a href="dang-ky.html">
                         <div class="icon1"><i class="fa-solid fa-notes-medical"></i></div>
                         <div class="text">
                             <h6>Chức năng</h6>
@@ -167,25 +178,25 @@
                 <h1>KHOA - PHÒNG</h1>
             </div>
             <div class="khoa-container flex">
-                <div class="khoa">
+                <div class="khoa wow animate__bounceIn">
                     <div class="layer"></div>
                     <img src="src/background/10130-300x188.jpg" alt="" />
                     <h3>PHÒNG TỔ CHỨC - HÀNH CHÍNH QUẢN TRỊ</h3>
                     <a class="button" href="#">XEM THÊM</a>
                 </div>
-                <div class="khoa">
+                <div class="khoa wow animate__bounceIn">
                     <div class="layer"></div>
                     <img src="src/background/10130-300x188.jpg" alt="" />
                     <h3>PHÒNG TỔ CHỨC - HÀNH CHÍNH QUẢN TRỊ</h3>
                     <a class="button" href="#">XEM THÊM</a>
                 </div>
-                <div class="khoa">
+                <div class="khoa wow animate__bounceIn">
                     <div class="layer"></div>
                     <img src="src/background/10130-300x188.jpg" alt="" />
                     <h3>PHÒNG TỔ CHỨC - HÀNH CHÍNH QUẢN TRỊ</h3>
                     <a class="button" href="#">XEM THÊM</a>
                 </div>
-                <div class="khoa">
+                <div class="khoa wow animate__bounceIn">
                     <div class="layer"></div>
                     <img src="src/background/10130-300x188.jpg" alt="" />
                     <h3>PHÒNG TỔ CHỨC - HÀNH CHÍNH QUẢN TRỊ</h3>
@@ -199,7 +210,7 @@
             </div>
             <div class="tintuc-containter">
                 <div class="tin flex">
-                    <div class="t-left">
+                    <div class="t-left wow animate__backInRight">
                         <img src="src/background/tin001.png" alt="" />
                     </div>
                     <div class="t-right">
@@ -212,7 +223,7 @@
                         <h2>Sở Y tế TP.HCM triển khai ứng dụng “Tra cứu nơi khám, chữa bệnh” trên điện thoại thông minh</h2>
                         <h3>Sau hơn 9 tháng xây dựng phần mềm ứng dụng tích hợp trên điện thoại thông minh giúp người dân dễ dàng tra cứu và chọn lựa nơi khám chữa bệnh phù hợp, <span><a href="https://medinet.hochiminhcity.gov.vn/Default.aspx" target="_blank">Sở Y tế TP.HCM</a></span> bắt đầu triển khai thử nghiệm nhằm đánh giá mức độ tiện ích của ứng dụng... <span><a href="#">xem thêm</a></span></h3>
                     </div>
-                    <div class="t-right">
+                    <div class="t-right wow animate__backInLeft">
                         <img src="src/background/tin002.png" alt="" />
                     </div>
                 </div>
@@ -228,5 +239,9 @@
 
         </section>
     </main>
+    <prefooter class="flex">
+        <div class="left-pf">aaa</div>
+        <div class="right-pf">bbb</div>
+    </prefooter>
 </body>
 </html>
