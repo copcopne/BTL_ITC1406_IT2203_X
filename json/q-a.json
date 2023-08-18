@@ -1,13 +1,10 @@
-{
-    "questions":
-    [
-        {
-            "question":"Tra cứu hồ sơ khám như thế nào ?",
-            "answer":"1. Bệnh nhân có thể lên VSSID coi thông tin.\n2. Truy cập website bệnh viện."
-        },
-        {
-            "question":"Làm sao để đăng ký khám bệnh ?",
-            "answer":""
-        }
-    ]
-}
+[
+    {
+        "question":"Tra cứu hồ sơ khám như thế nào ?",
+        "answer":"1. Bệnh nhân có thể lên VSSID coi thông tin.\n2. Truy cập website bệnh viện."
+    },
+    {
+        "question":"Làm sao để đăng ký khám bệnh ?",
+        "answer":""
+    }
+]
