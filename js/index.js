@@ -44,10 +44,10 @@ function runSlide() {
 }
 
 function runScript() {
-    $(".layer").mouseenter(function() {
+    $(".layer, .khoa h3, .khoa a").mouseenter(function() {
         $(this).css("opacity",".5");
+        $(this).siblings(".layer").css("opacity",".6"); // neu hover vao khu vuc khong phai layer
         $(this).siblings("img").css("transform","scale(0.9)");
-        //$(this > "img").css("translate")
     });
     $(".khoa").mouseleave(function() {
         $(".layer").css("opacity",".3");

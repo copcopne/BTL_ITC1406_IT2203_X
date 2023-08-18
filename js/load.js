@@ -125,7 +125,7 @@ function loadhtmlstruct() {
     `);
 
     $("#goTop").hide();
-    let stickyTop =$(".sticky").offset().top;
+    let stickyTop =$(".sticky").offset().top + 75;
     if( ($("footer").offset().top + 100) < $(document).height()) {
         $("footer").css("position", "fixed", "bottom", "0","left", "0", "right", "0");
     }
