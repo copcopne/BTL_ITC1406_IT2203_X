@@ -8,8 +8,7 @@ $(document).ready(function(){
                 <span class = "arrow"></span>
                 <span>${d.question}</span>
             </div>
-            <div class = "a">${d.answer}
-            </div>
+            <div class="a"><pre>${d.answer}</pre></div>
             </li>`
             if(d === null) continue;
             $(".faq").append(h);

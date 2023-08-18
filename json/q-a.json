@@ -4,7 +4,19 @@
         "answer":"1. Bệnh nhân có thể lên VSSID coi thông tin.\n2. Truy cập website bệnh viện."
     },
     {
-        "question":"Làm sao để đăng ký khám bệnh ?",
-        "answer":""
+        "question":"Lịch làm việc của bệnh viện như thế nào ?",
+        "answer":"- Từ Thứ 2 đến thứ sáu: Phòng 107 khám bệnh từ 05 giờ 30 – 17 giờ 00 (Không nghỉ trưa).\n- Tất cả các khoa khác nhận bệnh, khám sức  khỏe buổi sáng 7 giờ 00 – 11 giờ 30; buổi chiều 13 giờ 15 – 16 giờ 30.\n- Sáng Thứ bảy: 06 giờ 30 - 11 giờ 30: Khám sức khỏe, khám bệnh ngoại trú dịch vụ, dịch vụ BHYT tất cả các khoa.\n- Sáng Chủ nhật: 06 giờ 45 – 11 giờ 30: Khám bệnh ngoại trú dịch vụ, dịch vụ BHYT tại P.107, Khoa Nhi (P.115), Xét nghiệm, Siêu âm, Xquang"
+    },
+    {
+        "question":"Các hình thức thanh toán của bệnh viện ?",
+        "answer":"Thanh toán trực tiếp bằng tiền mặt hoặc quét mã VN pay"
+    },
+    {
+        "question":"Liên hệ ai để được tư vấn ?",
+        "answer":"Liên hệ qua số điện thoại tổng đài 028.38449928\nZalo: 0966381010"
+    },
+    {
+        "question":"Các khoa phòng hiện có ở bệnh viện ?",
+        "answer":"Phòng chức năng.\n\t1. Phòng HCQT-TCCB\n\t2. Phòng TC-KT\n\t3. Phòng KHTH\n\t4. Phòng Điều Dưỡng\nLâm sàng.\n\tK. Nội tổng hợp.\n\tK. Khám bệnh.\n\tK. Ngoại - GMHS.\n\tK. Cấp cứu - HSTCCĐ\n\tK. Nhi\n\tK. Mắt\n\tK. TMH\n\tK. RHM\n\tK. Phụ sản\n\tK. Y học cổ truyền\nCận lâm sàng\n\tK. Xét nghiệm\n\tK. Siêu âm\n\tK. X-Quang\nKhoa khác\n\tK. KS nhiễm khuẩn\n\tK. Dược - VTTB\n\tK. Dinh dưỡng"
     }
 ]
