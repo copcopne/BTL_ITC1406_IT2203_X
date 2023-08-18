@@ -64,9 +64,6 @@ function loadnav()
 }
 function loadhtmlstruct() {
     // man hinh load
-    $("main").before(`
-        <div class="loading"></div>
-    `);
     setTimeout(()=>{$(".loading").addClass("fadeoutClass");},1000);
     setTimeout(function() {
         $(".loading").hide();
@@ -133,7 +130,7 @@ function loadhtmlstruct() {
     $("#goTop").click(function() {
         $(window).scrollTop(0);
     });
-    
+
     $(window).scroll(function () {
         let = windowTop = $(window).scrollTop();
         if (stickyTop < windowTop) {
