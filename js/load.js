@@ -64,11 +64,13 @@ function loadnav()
 }
 function loadhtmlstruct() {
     // man hinh load
-    setTimeout(()=>{$(".loading").addClass("fadeoutClass");},1000);
+    setTimeout(()=>{
+        $(".loading").addClass("fadeoutClass");
+    }, 400);
     setTimeout(function() {
         $(".loading").hide();
         $(".loading").removeClass("fadeoutClass");
-    }, 1500);
+    }, 900);
 
     $("body").prepend(`
         <header class="head flex">
