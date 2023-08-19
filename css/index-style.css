@@ -1,5 +1,5 @@
 .thumbnail {
-    margin: 2rem auto;
+    margin: 2rem auto .5rem;
 }
 .photos-container {
     position: relative;
@@ -19,8 +19,8 @@
 }
 .nut {
     cursor: pointer;
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     margin: .5rem .5rem 0;
     border: 1px solid transparent;
     border-radius: 15px;
@@ -95,6 +95,7 @@
     margin-right:unset;
 }
 .option > a {
+    color: #D3E0EA;
     padding: 20px;
     display: flex;
     width: 100%;
@@ -155,13 +156,13 @@
     flex-wrap: wrap;
 }
 .khoa {
-    width: 25%;
-    position: relative;
-    border-right: 2px solid gray;
+    width: 30%;
+    margin : 23px;
+    border: 1px solid gray;
     cursor: pointer;
 }
-.khoa:last-child {
-    border-right: none;
+.khoa div {
+    position: relative;
 }
 .khoa img {
     width: 100%;
@@ -173,8 +174,8 @@
     left:0;
     right:0;
     bottom:0;
-    background: gray;
-    opacity:.3;
+    background: rgb(39, 39, 39);
+    opacity: .5;
     transition: .5s ease;
     z-index: 10;
 }
@@ -186,22 +187,17 @@
     right: 0;
     top:45%;
     text-align: center;
-    color: white;
+    color: whitesmoke;
     text-decoration: underline;
     z-index: 15;
     opacity: 1 !important;
 }
-.khoa > .button {
-    position:absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    bottom:0;
+.khoa h4 {
     text-align: center;
     text-decoration: underline;
-    border: none;
-    z-index: 15;
+    border: 1px solid black;
+    padding: 10px;
+    border-bottom: none;
     opacity: 1 !important;
 }
 .tintuc-container {
