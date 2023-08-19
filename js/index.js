@@ -55,7 +55,7 @@ function runScript() {
     });
 }
 
-$(document).ready(function () {
+$(window).on("load",function () {
     runSlide();
     runScript();
 });
