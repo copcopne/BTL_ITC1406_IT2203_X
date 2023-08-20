@@ -1,0 +1,19 @@
+.label {
+    padding-top: 2rem;
+}
+.label span {
+    margin: .3rem;
+    padding: .2rem;
+    border: 1px solid #095996;
+    color: whitesmoke;
+    background: #095996;
+    font-size: 20px;
+    font-weight: bold;
+}
+.heading {
+    padding: .5rem .3rem;
+}
+.heading span {
+    font-size: 32px;
+    font-weight: bolder;
+}
