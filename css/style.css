@@ -89,6 +89,10 @@ nav ul{
     text-decoration: none;
     transition: .5s ease;
 }
+.menu-containers{ 
+    /*Ẩn nút menu của mobile khi trên pc*/
+    display: none;
+}
 /* Khi hover đến li, tô màu cho thẻ a */
 .nav ul li:hover > a {
     background:#87b2d3;
