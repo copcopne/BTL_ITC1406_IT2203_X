@@ -30,7 +30,7 @@
 .active {
     background: #095996;
 }
-#next, #previous, #nextthongtin, #previousthongtin {
+#next, #previous {
     cursor: pointer;
     position: absolute;
     color:white;
@@ -47,20 +47,13 @@
     transition: .6s ease;
     z-index: 10;
 }
-#nextthongtin, #previousthongtin {
-    background: #095996;
-}
-#next, #nextthongtin {
+#next {
     right:0;
     border-radius: 20px 0 0 20px;
 }
-#next:hover, #previous:hover {
+#next:hover {
     background:#095996;
     color:whitesmoke;
-}
-#nextthongtin:hover, #previousthongtin:hover {
-    opacity: 1;
-    color: whitesmoke;
 }
 @keyframes fade {
     from {
@@ -127,7 +120,7 @@
     text-align:justify;
 }
 .thongtin-container {
-    padding : 0 0 1rem 0;
+    padding : 0 0 2rem 0;
     overflow:hidden;
     position: relative;
 }
@@ -137,6 +130,7 @@
 }
 .thongtin img {
     width:100%;
+    max-height: 200px;
 }
 .thongtin h3 {
     margin:0 0 .6rem 0;
@@ -149,6 +143,11 @@
     color: black;
     font-family: cabin, sans-serif;
     font-weight: bold;
+}
+.xemthem {
+    position: absolute;
+    right: 50px;
+    bottom: 5px;
 }
 .khoa-container {
     padding: 0 0 1rem 0;
@@ -180,7 +179,7 @@
     z-index: 10;
 }
 .khoa h3 {
-    position:absolute;
+    position: absolute;
     margin-left: 0;
     margin-right: 0;
     left: 0;
