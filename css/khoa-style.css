@@ -1,3 +1,13 @@
+p {
+    font-size: 24px;
+    padding: .5rem 1rem;
+}
+.khoa {
+    background: rgba(206, 206, 206 , .2);
+    border-radius: 20px;
+    padding: 0 1rem;
+    padding-bottom: 2rem;
+}
 .label {
     padding-top: 2rem;
 }
@@ -11,9 +21,92 @@
     font-weight: bold;
 }
 .heading {
-    padding: .5rem .3rem;
+    padding: 1rem .3rem;
 }
 .heading span {
     font-size: 32px;
     font-weight: bolder;
+}
+.information {
+    padding:.5rem .2rem;
+    background:white;
+}
+.i {
+    font-style: italic;
+}
+.share {
+    margin: 1rem;
+}
+.platforms {
+    margin: .5rem;
+}
+.platform {
+    padding: .5rem;
+    margin-right: 1rem;
+    color: whitesmoke;
+}
+.fb {
+    border:1px solid #1b74e4;
+    background: #1b74e4;
+}
+.x {
+    border: 1px solid black;
+    background:black;
+}
+.ins {
+    border: 1px solid transparent;
+    background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+.thr {
+    border:1px solid black;
+    background:black;
+}
+.post-container {
+    padding:.5rem 2rem;
+}
+.post {
+    margin: 0 2rem;
+    padding-bottom: 1rem;
+    width: 30%;
+    box-shadow: 10px 10px rgba(206, 206, 206 , .7);
+}
+.post img {
+    width: 100%;
+}
+.post h4 {
+    color:black;
+    text-decoration: underline;
+    font-size: 18px;
+}
+.post h5{
+    color: rgb(156, 156, 156);
+}
+.notice {
+    padding: 0 1rem;
+}
+.fill h3 {
+    margin: 1rem .5rem .2rem;
+}
+.fill textarea {
+    width: 100%;
+}
+.name, .email, .web {
+    width: 30%;
+}
+.personalInformation {
+    justify-content: space-between;
+}
+.personalInformation input {
+    width: 100%;
+    height:50px;
+}
+.checkbox {
+    margin-top: 1rem;
+}
+.submit button {
+    margin: 1rem 0;
+    border: none;
+    color: whitesmoke;
+    background: #095996;
+    padding: 1rem;
 }
