@@ -164,7 +164,8 @@ function loadhtmlstruct() {
                 $("main > section:first-child").css("padding-top","50px");
         }
         else {
-            $(".sticky").css("position", "relative");  
+            if ($(window).width() >= 800)
+                    $(".sticky").css("position", "relative");  
             $("#goTop").hide("slow"); 
             $("main > :first-child").css("padding-top","unset");
         }
