@@ -1,0 +1,80 @@
+main {
+    margin: 0;
+    width: 100%;
+}
+.khoa {
+    margin: 0;
+    width: 100% !important;
+    border-radius: unset;
+    padding: 0;
+}
+.label, .heading, .fllarea h3, .fill h3 {
+    margin-left: 1rem;
+}
+p {
+    font-size:18px;
+}
+.information {
+    width: 100%;
+}
+.platforms {
+    width: 100%;
+}
+.platform {
+    padding: .8rem;
+    width: auto;
+    height: auto;
+}
+.platform i {
+    font-size: 28px;
+}
+.platform span {
+    display: none;
+}
+.post-container {
+    flex-direction: column;
+    padding: .5rem 0;
+    width: 100%;
+}
+.post {
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    width: 85%;
+}
+.reply {
+    width: 90%;
+    margin: 0 auto;
+}
+.reply .heading {
+    padding: 0;
+}
+.notice {
+    margin-top: .5rem;
+    font-size: 18px;
+    text-align: justify;
+}
+.personalInformation {
+    flex-direction: column;
+}
+.personalInformation input {
+    height: 55px;
+}
+.fillarea {
+    width: 100%;
+}
+.checkbox {
+    padding: .8rem;
+}
+.submit button {
+    margin-left: 1.5rem;
+    margin-top: 0;
+}
+.left-pf {
+    width: 100%;
+}
+.left-pf iframe {
+    width: 100%;
+}
+.right-pf {
+    display: none;
+}

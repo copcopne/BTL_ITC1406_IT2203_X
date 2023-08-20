@@ -89,6 +89,7 @@ p {
 }
 .fill textarea {
     width: 100%;
+    resize: none;
 }
 .name, .email, .web {
     width: 30%;

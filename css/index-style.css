@@ -200,7 +200,6 @@
     top:45%;
     text-align: center;
     color: whitesmoke;
-    text-decoration: underline;
     z-index: 15;
     opacity: 1 !important;
 }
@@ -250,8 +249,8 @@
     padding:1rem 0;
     margin: 1rem 0;
     border: 1px solid rgb(206, 206 ,206);
-    background: rgba(206, 206, 206, 0.5);
-    box-shadow: 10px 10px rgba(206, 206, 206, 0.7);
+    background: #accae0;
+    box-shadow: 10px 10px #5699cc;
 }
 .below {
     justify-content: space-evenly;
