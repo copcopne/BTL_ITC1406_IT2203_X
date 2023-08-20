@@ -4,15 +4,50 @@
     }
     section h1 {
         text-align: start;
-        padding: unset;
+        padding: 0;
+        padding-top: 1rem;
     }
     .reg {
         width: 100%;
-        padding: 0;
+        padding: 0 !important;
         margin-top : .5rem;
     }
+    label {
+        padding-left: .5rem;
+    }
+    .double {
+        padding: 0 .5rem !important;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .double > div {
+        margin-right: 0 !important;
+        width: 100% !important;
+    }
+    .double > div:last-child {
+        margin-top: .5rem;
+    }
     input {
-        margin-top: 0;
+        height: 50px;
+        margin-top: 0 !important;
+    }
+    select {
+        margin-top: 0 !important;
+        height: 50px;
+    }
+    .textarea {
+        padding-bottom: 0 !important;
+    }
+    textarea {
+        margin-top: 0 !important;
+    }
+    .submit {
+        margin-top: 0 !important;
+        margin-left: 1rem;
+        padding: 0 1rem;
+        margin-bottom: .5rem;
+        text-align: center;
     }
 
 }

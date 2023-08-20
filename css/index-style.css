@@ -75,6 +75,7 @@ main {
 
 section.bigoptions {
     padding-bottom: 0;
+    margin-bottom: .5rem;
 }
 
 .options {
@@ -112,7 +113,7 @@ section.bigoptions {
     text-align: end;
 }
 .tieude {
-    margin:.3rem 0 ;
+    margin: 0;
     padding: .6rem 0;
     text-align:center;
     background-color:#095996;
@@ -171,6 +172,7 @@ section.bigoptions {
     color:#095996;
 }
 .khoa-container {
+    background: white;
     padding: 0 0 1rem 0;
     overflow: hidden;
     flex-wrap: wrap;

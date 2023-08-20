@@ -65,7 +65,7 @@ li {
 .nav{
     position: relative;
     justify-content: space-around;
-    background: #D3E0EA;
+    background: #095996;
     border: none;
     border-radius: 0 0 10px 10px;
     z-index: 999;
@@ -81,7 +81,8 @@ nav ul{
     display: block;
     padding: 0 30px;
     line-height: 50px;
-    color: black;
+    background:#095996;
+    color: whitesmoke;
     text-decoration: none;
     transition: .5s ease;
 }
@@ -91,9 +92,9 @@ nav ul{
 }
 /* Khi hover đến li, tô màu cho thẻ a */
 .nav ul li:hover > a {
-    background:#87b2d3;
+    background:#095996;
     opacity: .8;
-    color: white;
+    color: whitesmoke;
 }
 .submenu1{
     display: none;
@@ -222,7 +223,7 @@ footer{
     right: 0;
     justify-content: space-evenly;
     align-items: center;
-    background:#146C94;
+    background:#095996;
     padding: 1rem;
 }
 footer h3{

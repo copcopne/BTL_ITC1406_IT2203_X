@@ -90,10 +90,10 @@ function loadhtmlstruct() {
                 <div></div>
                 </a>
             </div>
-            <div class="text">
+            <a class="text" href="index.html">
                 <h1>BỆNH VIỆN MỞ</h1>
                 <h2>THÀNH PHỐ HỒ CHÍ MINH</h2>
-            </div>
+            </a>
         </div>
         <div class="r-head flex">
             <div>
@@ -161,7 +161,7 @@ function loadhtmlstruct() {
             $(".sticky").css("position", "fixed");
             $("#goTop").show("slow");
             if ($(document).width() > 800)
-                $("main > section:first-child").css("padding-top","50px");
+                $("main > :first-child").css("padding-top","50px");
         }
         else {
             if ($(window).width() >= 800)
