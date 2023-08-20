@@ -116,8 +116,11 @@
 }
 .noidung {
     margin:.5rem 0;
+    padding: 2.5rem 2rem;
     font-size:large;
     text-align:justify;
+    background: #65c7d480;
+    border-radius: 40px;
 }
 .thongtin-container {
     padding : 0 0 2rem 0;
@@ -133,21 +136,32 @@
     max-height: 200px;
 }
 .thongtin h3 {
-    margin:0 0 .6rem 0;
-    color:black;
+    margin:0 0 1rem 0;
+    color:#095996;
     text-decoration: underline;
+    font-size: 20px;
+
 }
 .button {
     padding:.5rem;
-    border:1px solid #095996;
-    color: black;
+    border:2px solid #5699cc;
+    color: #095996;
     font-family: cabin, sans-serif;
     font-weight: bold;
+    transition: .5s ease;
+}
+.button:hover {
+    color:whitesmoke;
+    background:#095996;
 }
 .xemthem {
     position: absolute;
-    right: 50px;
+    right: 40px;
     bottom: 5px;
+}
+.xemthem span {
+    font-size: 24px;
+    color:#095996;
 }
 .khoa-container {
     padding: 0 0 1rem 0;
@@ -158,7 +172,6 @@
     width: 30%;
     margin : 23px;
     border: 1px solid gray;
-    cursor: pointer;
 }
 .khoa div {
     position: relative;
@@ -173,7 +186,7 @@
     left:0;
     right:0;
     bottom:0;
-    background: rgb(39, 39, 39);
+    background: rgb(128, 128, 128);
     opacity: .5;
     transition: .5s ease;
     z-index: 10;
@@ -189,14 +202,6 @@
     color: whitesmoke;
     text-decoration: underline;
     z-index: 15;
-    opacity: 1 !important;
-}
-.khoa h4 {
-    text-align: center;
-    text-decoration: underline;
-    border: 1px solid black;
-    padding: 10px;
-    border-bottom: none;
     opacity: 1 !important;
 }
 .tintuc-container {
@@ -235,4 +240,22 @@
     font-size: 22px;
     color:#4e4c4c;
     font-style: italic;
+}
+.review-container {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.review {
+    width: 30%;
+    padding:1rem 0;
+    margin: 1rem 0;
+    border: 1px solid rgb(206, 206 ,206);
+    background: rgba(206, 206, 206, 0.5);
+    box-shadow: 10px 10px rgba(206, 206, 206, 0.7);
+}
+.below {
+    justify-content: space-evenly;
+}
+.under {
+    padding: 1rem;
 }
