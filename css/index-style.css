@@ -1,3 +1,9 @@
+main {
+    background: rgba(9, 89, 150, .1);
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-radius: 30px;
+}
 .thumbnail {
     margin: 2rem auto .5rem;
 }
@@ -67,17 +73,22 @@
     animation: fade 1.5s;
 }
 
+section.bigoptions {
+    padding-bottom: 0;
+}
+
 .options {
     margin: 0;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     border-radius: 10px;
 }
 .option {
     border: 1px solid gray;
-    margin-right:5px;
+    margin-right: 5px;
     border-radius: 10px;
     background:#095996;
-    width: 100%;
+    width: 15%;
     position:relative;
     transition: .5s ease;
 }
@@ -100,16 +111,12 @@
     font-size:40px;
     text-align: end;
 }
-.option > .text {
-    width: 70%;
-}
 .tieude {
     margin:.3rem 0 ;
     padding: .6rem 0;
     text-align:center;
     background-color:#095996;
     border: 1px solid gray;
-    border-radius: 10px;
     color: whitesmoke;
     font-family: cabin, sans-serif;
     font-weight: bold;
@@ -120,7 +127,6 @@
     font-size:large;
     text-align:justify;
     background: #65c7d480;
-    border-radius: 40px;
 }
 .thongtin-container {
     padding : 0 0 2rem 0;
@@ -134,6 +140,7 @@
 .thongtin img {
     width:100%;
     max-height: 200px;
+    border-radius: 20px;
 }
 .thongtin h3 {
     margin:0 0 1rem 0;
@@ -208,6 +215,7 @@
     padding: 0 0 .5rem 0;
 }
 .tin {
+    background: white;
     padding:.5rem;
     border: 3px solid #095996;
     border-radius: 20px 20px 20px 20px;
@@ -216,11 +224,10 @@
 .tin img {
     width:100%;
     height: 400px;
+    border-radius: 40px;
 }
 .t-left, .t-right {
     width: 50%;
-    border-radius: 50px;
-    border: 3px solid white;
 }
 .tin span > a {
     text-decoration: underline;

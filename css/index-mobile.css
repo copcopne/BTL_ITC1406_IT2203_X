@@ -1,0 +1,102 @@
+@media screen and (max-width: 800px) {
+    main {
+        margin-top: 180px;
+        padding-top: 5px;
+        width: 100%;
+        border-radius: unset;
+    }
+    .l-head > div:first-child {
+        display: block;
+        position: absolute;
+        top: 80px;
+    }
+    .thumbnail {
+        display: none;
+    }
+    section {
+        padding-top: 10px !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    section:nth-child(2) {
+        border-radius: 5px 5px 0 0;
+    }
+    section.sreview {
+        border-radius: 0 0 5px 5px;
+    }
+    .options {
+        width: 100%;
+    }
+    .option {
+        margin-right: 0;
+        margin-bottom: .5rem;
+        width: 48%;
+    }
+    .option .text {
+        font-size: 24px;
+        text-align: right;
+    }
+    .gioithieu {
+        padding-bottom: 0 !important;
+    }
+    .tieude {
+        border-radius: unset;
+        font-size: 15px;
+    }
+    .noidung {
+        padding: 1.5rem 1rem;
+        border-radius: 10px;
+        font-size: medium;
+    }
+    .thongtin-container {
+        flex-wrap: wrap;
+    }
+    .thongtin {
+        width: 100%;
+        padding-top: 1.5rem;
+    }
+    .thongtin img {
+        max-height: unset;
+    }
+    .xemthem {
+        right: 20px;
+        bottom: 0;
+    }
+    .khoa {
+        width: 100%;
+        border: unset;
+    }
+    .tin:nth-child(odd) {
+        flex-direction: column;
+    }
+    .tin:nth-child(even) {
+        flex-direction: column-reverse;
+    }
+    .t-left, .t-right {
+        width: 100%;
+    }
+    .t-left img, .t-right img {
+        height: 200px;
+        border-radius: 10px;
+    }
+    .tin h2 {
+        margin-top: .5rem;
+        font-size: 20px;
+        text-align: start;
+    }
+    .tin h3 {
+        margin: .5rem;
+        font-size: 15px;
+    }
+    .review {
+        width: 80%;
+    }
+    .user {
+        width: 100%;
+    }
+    .rating {
+        padding: .5rem;
+        font-size: 10px;
+        text-align: end;
+    }
+}
