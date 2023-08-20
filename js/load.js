@@ -119,15 +119,13 @@ function loadhtmlstruct() {
     `);
     $("body").append(`
         <footer class = "flex">
-            <p>
-                Copyright © Bệnh viện Mở TPHCM
-                <br>
-                Thiết kế: Nguyễn Trương Quý Sĩ, Đường Dương Thái Tuấn
-            </p>
-            <hr>
-            <p>
-                Cơ sở chính: 371 Nguyễn Kiệm, Phường 3, Gò Vấp, Thành phố Hồ Chí Minh
-            </p>
+            <div class="left-footer">
+                <h3>Copyright © Bệnh viện Mở TPHCM</h3>
+                <h3>Thiết kế: Nguyễn Trương Quý Sĩ, Đường Dương Thái Tuấn</h3>
+            </div>
+            <div class="right-footer">
+                <h3>Cơ sở chính: 371 Nguyễn Kiệm, Phường 3, Gò Vấp, Thành phố Hồ Chí Minh</h3>
+            </div>
         </footer>
     `);
     $("footer").before(`

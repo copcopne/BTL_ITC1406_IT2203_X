@@ -225,10 +225,7 @@ footer{
     background:#146C94;
     padding: 1rem;
 }
-footer hr {
-    color: #146C94;
-  }
-footer p{
+footer h3{
     color:white;
     text-align: center;
     font-weight: bold;
