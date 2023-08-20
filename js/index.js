@@ -44,7 +44,7 @@ function runSlide() {
 }
 
 function runScript() {
-    $(".layer, .khoa h3, .khoa a").mouseenter(function() {
+    $(".layer, .khoa h3").mouseenter(function() {
         $(this).css("opacity",".7");
         $(this).siblings(".layer").css("opacity",".7"); // neu hover vao khu vuc khong phai layer
         $(this).siblings("img").css("transform","scale(0.9)");
