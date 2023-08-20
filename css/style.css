@@ -50,6 +50,10 @@ li {
 }
 .text h1 {
     font-family: inherit;
+    font-size: 28px;
+}
+.text h2{
+    font-size: 24px;
 }
 .sub1 {
     color:#428ad1;

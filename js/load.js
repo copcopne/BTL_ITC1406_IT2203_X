@@ -84,8 +84,8 @@ function loadhtmlstruct() {
                 </a>
             </div>
             <div class="text">
-                <h1 style="font-size:28px;">BỆNH VIỆN MỞ</h1>
-                <h2 style="font-size:24px;">THÀNH PHỐ HỒ CHÍ MINH</h2>
+                <h1>BỆNH VIỆN MỞ</h1>
+                <h2>THÀNH PHỐ HỒ CHÍ MINH</h2>
             </div>
         </div>
         <div class="r-head flex">
