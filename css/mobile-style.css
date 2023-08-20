@@ -1,0 +1,82 @@
+@media only screen and (max-width: 800px) {
+    body,prefooter{
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    .head{
+        flex-direction: column;
+        padding:0;
+    }
+    .head h1,.head h2{
+        font-size:large;
+    }
+    .text{
+        margin:0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .l-head{
+        width: 100%;
+        height: 100%;
+        justify-content: space-around;
+    }
+    .l-head a > h1{
+        display: none;
+    }
+    .r-head{
+        display: none;
+    }
+
+    /*thanh nav*/
+    .menu{
+        flex-direction: column;
+        height: 100%;
+    }
+    .nav{
+        justify-content: center;
+        display: none;
+    }
+    .responsive{
+        display: flex;
+    }
+    /*nút hiện menu*/
+    .menu-containers{
+        display: flex;
+        margin: 0.2rem;
+        justify-content: flex-start;
+    }
+    .menu-container{
+        width: 2.5rem;
+        height: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 8px;
+    }
+    .menu-container div{
+        /*vẽ 3 gạch*/
+        background-color: #146C94;
+        border-radius: 2px;
+        width: 80%;
+        height: 4px;
+    }
+    @keyframes appear {
+        from{
+            left:-100%;
+        }
+        to{
+            left:0;
+        }
+    }
+    .appear{
+        animation: appear 0.5s ease-in;
+        position: fixed;
+    }
+    .hidden{
+        animation: appear 0.5s ease-in reverse;
+        left:-100%;
+    }
+}

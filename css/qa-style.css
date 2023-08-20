@@ -1,7 +1,4 @@
 /*artical*/
-*{
-    font-family: 'Cabin',sans-serif;
-}
 article{
     padding: 1rem;
     margin-top: 2rem;
@@ -54,4 +51,21 @@ article h1{
 }
 .arrow-rotate{
     transform:rotate(90deg);
+}
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1; /* Expand main content to fill remaining space */
+}
+
+footer {
+  margin-top: auto; /* Push the footer to the bottom */
 }
