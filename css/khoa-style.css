@@ -109,4 +109,5 @@ p {
     color: whitesmoke;
     background: #095996;
     padding: 1rem;
+    cursor: pointer;
 }

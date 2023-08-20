@@ -21,8 +21,8 @@
         })
         wow.init();
     </script>
-    <script src="js/index.js"></script>
     <script src="js/load.js"></script>
+    <script src="js/khoa.js"></script>
 </head>
 <body>
     <div class="loading"></div>
@@ -116,29 +116,30 @@
                 <div class="notice"><span>Email của bạn sẽ không được hiển thị công khai. Các trường bắt buộc được đánh dấu *</span></div>
                 <div class="fill">
                     <h3>Bình luận *</h3>
-                    <textarea name="" id="" cols="200" rows="8">
-                    </textarea>
-                    <div class="personalInformation flex">
-                        <div class="name">
-                            <h3>Tên của bạn *</h3>
-                            <input type="text" name="" id="" />
+                    <form>
+                        <textarea name="comment" cols="150" rows="8" required></textarea>
+                        <div class="personalInformation flex">
+                            <div class="name">
+                                <h3>Tên của bạn *</h3>
+                                <input type="text" name="" id="nameID" required />
+                            </div>
+                            <div class="email">
+                                <h3>Email của bạn *</h3>
+                                <input type="email" name="" id="emailID" required />
+                            </div>
+                            <div class="web">
+                                <h3>Web của bạn</h3>
+                                <input type="text" name="" id="webID" />
+                            </div>
                         </div>
-                        <div class="email">
-                            <h3>Email của bạn *</h3>
-                            <input type="email" name="" id="" />
+                        <div class="checkbox">
+                            <input type="checkbox" name="" id="isChecked" />
+                            <span>Lưu tên của tôi, email và trang web của tôi vào trình duyệt này cho lần bình luận kế tiếp của tôi.</span>
                         </div>
-                        <div class="web">
-                            <h3>Web của bạn</h3>
-                            <input type="text" name="" id="" />
+                        <div class="submit">
+                            <button type="submit">PHẢN HỒI</button>
                         </div>
-                    </div>
-                    <div class="checkbox">
-                        <input type="checkbox" name="" id="" />
-                        <span>Lưu tên của tôi, email và trang web của tôi vào trình duyệt này cho lần bình luận kế tiếp của tôi.</span>
-                    </div>
-                    <div class="submit">
-                        <button type="submit">PHẢN HỒI</button>
-                    </div>
+                    </form>
                 </div>
             </div>
         </section>
