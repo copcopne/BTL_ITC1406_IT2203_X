@@ -104,6 +104,13 @@ function loadhtmlstruct() {
             <div class="nav sticky flex">
                 <ul class="menu">
                 </ul>
+                <div class="menu-containers">
+                <a class="menu-container" href="javascript:;">
+                <div></div>
+                <div></div>
+                <div></div>
+                </a>
+                </div>
             </div>
         </nav>
     `);
