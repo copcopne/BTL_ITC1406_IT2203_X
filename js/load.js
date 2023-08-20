@@ -123,6 +123,26 @@ function loadhtmlstruct() {
             </p>
         </footer>
     `);
+    $("footer").before(`
+        <prefooter class="flex">
+            <div class="left-pf wow animate__backInLeft">
+                <h3 class="highlight">BỆNH VIỆN MỞ TP.HCM</h3>
+                <span>
+                    Địa chỉ: <span class="highlight">371 Nguyễn Kiệm, Phường 3, Gò Vấp, Thành phố Hồ Chí Minh</span>
+                </span>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.925119628487!2d106.6771076!3d10.8170424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e1f241211f%3A0xc9ef195798144b1f!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBN4bufIFRQLkhDTSAtIEPGoSBz4bufIDM!5e0!3m2!1svi!2s!4v1692449822367!5m2!1svi!2s" width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="right-pf wow animate__backInRight">
+                <h3 class="highlight">HỖ TRỢ VÀ GIẢI ĐÁP</h3>
+                <span>
+                    Liên hệ: <span><a class="highlight" href="tel:02839300210">02839300210</a></span>
+                </span>
+                <div>
+                    <img src="src/support.png" alt="HỖ TRỢ">
+                </div>
+            </div>
+        </prefooter>
+    `);
 
     $("#goTop").hide();
     let stickyTop =$(".sticky").offset().top + 75;
