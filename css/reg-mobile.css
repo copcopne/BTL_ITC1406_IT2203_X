@@ -1,0 +1,18 @@
+@media screen and (max-width: 800px) {
+    section {
+        padding: 0;
+    }
+    section h1 {
+        text-align: start;
+        padding: unset;
+    }
+    .reg {
+        width: 100%;
+        padding: 0;
+        margin-top : .5rem;
+    }
+    input {
+        margin-top: 0;
+    }
+
+}

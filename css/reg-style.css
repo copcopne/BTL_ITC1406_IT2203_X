@@ -2,11 +2,11 @@
 *{
     font-family: 'Cabin',sans-serif;
 }
-section{
+section {
     padding: 1rem;
     margin-top: 2rem;
 }
-section h1{
+section h1 {
     color:#146C94;
     padding:1rem;
     font-weight: 700;
@@ -14,7 +14,7 @@ section h1{
 }
 
 /*thân reg*/
-.reg{
+.reg {
     font-size: 20px;
     font-weight: 400;
     margin-top: 1rem;
@@ -22,12 +22,12 @@ section h1{
     border-radius: 10px;
     padding: 1rem;
 }
-.reg > div{
+.reg > div {
     padding: 0.5rem;
 }
 
 /*Các nút*/
-.reg input:not(.submit),.reg select,.reg textarea{
+.reg input:not(.submit),.reg select,.reg textarea {
     width: 100%;
     margin-top: 0.5rem;
     border: 1px solid gray;
@@ -35,28 +35,28 @@ section h1{
     padding: 1rem;
     background-color: white;
 }
-.reg input:focus, .reg select:focus, .reg textarea:focus{
+.reg input:focus, .reg select:focus, .reg textarea:focus {
     border: 2px solid #146C94;
     outline: none;
 }
-.required::after{
+.required::after {
     content:" *";
     color: red;
 }
 
 /*2 nút trên 1 hàng*/
-.double{
+.double {
     display: flex;
 }
-.double > div{
+.double > div {
     width: 50%;
 }
-.double > div:first-child{
+.double > div:first-child {
     margin-right: 1rem;
 }
 
 /*Nút submit*/
-.submit{
+.submit {
     padding: 1rem 2rem;
     border: 2px solid #146C94;
     border-radius: 20px;
@@ -64,18 +64,18 @@ section h1{
     color: #D3E0EA;
     cursor: pointer;
 }
-.submit:hover{
+.submit:hover {
     background-color: #428ad1;
 }
 
 /*Hiệu ứng*/
 @keyframes blinkborder {
-    from{
+    from {
     }
-    to{
+    to {
         border-color: red;
     }    
 }
-.alert:focus{
+.alert:focus {
     animation: blinkborder 0.3s 3 linear;
 }
