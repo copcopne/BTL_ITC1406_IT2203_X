@@ -83,6 +83,13 @@ function loadhtmlstruct() {
                     </h1>
                 </a>
             </div>
+            <div class="menu-containers">
+                <a class="menu-container" href="javascript:openMenu();">
+                <div></div>
+                <div></div>
+                <div></div>
+                </a>
+            </div>
             <div class="text">
                 <h1>BỆNH VIỆN MỞ</h1>
                 <h2>THÀNH PHỐ HỒ CHÍ MINH</h2>
@@ -101,18 +108,10 @@ function loadhtmlstruct() {
         </div>
         </header>  
         <nav>
-            <div class="menu-containers">
-                <a class="menu-container" href="javascript:openMenu();">
-                <div></div>
-                <div></div>
-                <div></div>
-                </a>
-            </div>
-            <div class="nav sticky flex hidden">
-                <ul class="menu">
+            <div class="nav sticky flex">
+                <ul class="menu hidden">
                 </ul>
             </div>
-            
         </nav>
     `);
     $("main").append(`

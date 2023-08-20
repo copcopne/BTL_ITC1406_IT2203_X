@@ -1,6 +1,5 @@
 function openMenu(){
-    $(".nav").toggleClass("hidden")
+    $(".menu").toggleClass("hidden")
     $(".nav").toggle();
-    $(".nav").toggleClass("appear");
-    
+    $(".menu").toggleClass("appear");
 }

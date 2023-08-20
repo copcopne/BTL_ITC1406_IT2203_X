@@ -1,16 +1,17 @@
-@media only screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
     body,prefooter{
         overflow-y: auto;
         overflow-x: hidden;
     }
     .head{
-        flex-direction: column;
         padding:0;
     }
     .head h1,.head h2{
         font-size:large;
+        color: white;
     }
     .text{
+        width: 90%;
         margin:0;
         text-align: center;
         display: flex;
@@ -21,28 +22,44 @@
         width: 100%;
         height: 100%;
         justify-content: space-around;
+        background-color: #146C94;
     }
-    .l-head a > h1{
-        display: none;
-    }
-    .r-head{
+    .l-head > div:first-child,.r-head{
         display: none;
     }
 
     /*thanh nav*/
     .menu{
         flex-direction: column;
+        justify-content:left;
+        align-items: center;
         height: 100%;
+        width: 50%;
+        background-color: #0F4E6C;
     }
     .nav{
-        justify-content: center;
         display: none;
+        background-color: #0f4f6c6e;
+        width: 100%;
+        position: fixed;
+        height: 100%;
+        margin-left: 0;
     }
+    .menu li a{
+        color: white;
+        width: 100%;
+        text-align: center;
+    }
+    .nav li{
+        width: 100%;
+    }
+
     .responsive{
         display: flex;
     }
     /*nút hiện menu*/
     .menu-containers{
+        width: 10%;
         display: flex;
         margin: 0.2rem;
         justify-content: flex-start;
@@ -58,7 +75,7 @@
     }
     .menu-container div{
         /*vẽ 3 gạch*/
-        background-color: #146C94;
+        background-color: white;
         border-radius: 2px;
         width: 80%;
         height: 4px;
@@ -73,7 +90,8 @@
     }
     .appear{
         animation: appear 0.5s ease-in;
-        position: fixed;
+        position: fixed !important;
+        height: 100%;
     }
     .hidden{
         animation: appear 0.5s ease-in reverse;
