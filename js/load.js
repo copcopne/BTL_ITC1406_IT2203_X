@@ -160,7 +160,8 @@ function loadhtmlstruct() {
         if (stickyTop < windowTop) {
             $(".sticky").css("position", "fixed");
             $("#goTop").show("slow");
-            $("main > section:first-child").css("padding-top","50px");
+            if ($(document).width() > 800)
+                $("main > section:first-child").css("padding-top","50px");
         }
         else {
             $(".sticky").css("position", "relative");  
