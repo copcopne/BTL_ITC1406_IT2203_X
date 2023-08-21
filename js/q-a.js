@@ -15,7 +15,8 @@ $(document).ready(function(){
         }
      })
      $(document).on("click",".q",function(){
-        $(this).parent().find(".a").toggleClass("a-open");
-        $(this).find(".arrow").toggleClass("arrow-rotate");
+        $(this).toggleClass("hover");
+        $(this).parent().find(".a").toggleClass("a-open hover");
+        $(this).find(".arrow").toggleClass("arrow-rotate hover");
     });
 });
