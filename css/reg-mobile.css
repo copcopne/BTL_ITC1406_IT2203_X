@@ -1,4 +1,7 @@
 @media screen and (max-width: 800px) {
+    main {
+        width: 100%;
+    }
     section {
         padding: 0;
     }
@@ -6,14 +9,19 @@
         text-align: start;
         padding: 0;
         padding-top: 4rem;
+        margin-left: 1rem;
     }
     .reg {
         width: 100%;
-        padding: 0 !important;
-        margin-top : .5rem;
+        padding: 0;
+        padding-top: 1rem;
+        padding-bottom: .5rem;
+        margin-top: .5rem;
+        border-radius: unset;
     }
     label {
         padding-left: .5rem;
+        font-size: medium;
     }
     .double {
         padding: 0 .5rem !important;
@@ -28,26 +36,23 @@
     .double > div:last-child {
         margin-top: .5rem;
     }
-    input {
+    input, select {
         height: 50px;
-        margin-top: 0 !important;
-    }
-    select {
-        margin-top: 0 !important;
-        height: 50px;
+        margin-top: .3rem !important;
     }
     .textarea {
         padding-bottom: 0 !important;
     }
     textarea {
-        margin-top: 0 !important;
+        margin-top: .3rem !important;
     }
     .submit {
         margin-top: 0 !important;
         margin-left: 1rem;
         padding: 0 1rem;
-        margin-bottom: .5rem;
+        margin-bottom: .3rem;
         text-align: center;
+        font-size: medium;
     }
 
 }
