@@ -214,4 +214,10 @@
     left:80%;
     transform: translateY(200%);
     }
+    .submenu1::after {
+        content: none;
+    }
+    .submenu2::after {
+        content: none;
+    }
 }
