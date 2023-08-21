@@ -4,3 +4,6 @@ function openMenu(){
     $(".overlay").toggle();
     $(".overlay").toggleClass("fadein");
 }
+$(document).on("click",".menu a",function(event){
+    $(event.target).parent().find("ul").toggle();
+})
