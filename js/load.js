@@ -6,19 +6,22 @@ function loadnav()
             for(let c of data)
             {
                 let h="";
-                h+=`<li>
-                <a href="${c.link}">${c.text}</a>
-                </li>`;
-                document.querySelector(".nav .menu").insertAdjacentHTML("beforeend",h);
-
                 //nếu có submenu1 thì chạy dòng này
                 if(c.children.length != 0)
                 {
+                    h+=`<li>
+                    <a href="${c.link}">${c.text}<span class="nav-arrow"></span></a>
+                    </li>`;
+                    document.querySelector(".nav .menu").insertAdjacentHTML("beforeend",h);
                     let temp=`<ul class="submenu1"></ul>`;
                     document.querySelector(`ul.menu > li:nth-child(${n})`).insertAdjacentHTML("beforeend",temp);
                 }
                 else
                 {
+                    h+=`<li>
+                    <a href="${c.link}">${c.text}</a>
+                    </li>`;
+                    document.querySelector(".nav .menu").insertAdjacentHTML("beforeend",h);
                     n++;
                     continue;
                 }
@@ -26,22 +29,26 @@ function loadnav()
                 for(let c1 of c.children)
                 {
                     h = "";
-                    h+=`<li>
-                    <a href="${c1.link}">${c1.text}</a>
-                    </li>`;
                     let e = document.querySelector(`ul.menu > li:nth-child(${n}) > ul`);
                     if(e === null)
                         continue;
-                    e.insertAdjacentHTML("beforeend",h);
 
                     //nếu có submenu2 thì chạy dòng này không thi skip
                     if(c1.children.length != 0)
                     {
+                        h+=`<li>
+                    <a href="${c1.link}">${c1.text}<span class="nav-arrow"></span></a>
+                    </li>`;
+                    e.insertAdjacentHTML("beforeend",h);
                         let temp=`<ul class="submenu2"></ul>`;
                         document.querySelector(`ul.menu > li:nth-child(${n}) > ul.submenu1 > li:nth-child(${n1})`).insertAdjacentHTML("beforeend",temp);
                     }
                     else
                     {
+                        h+=`<li>
+                    <a href="${c1.link}">${c1.text}</a>
+                    </li>`;
+                    e.insertAdjacentHTML("beforeend",h);
                         n1++;
                         continue;
                     }
