@@ -265,3 +265,7 @@ prefooter {
     width: 500px;
     height: 500px;
 }
+
+.overlay{
+    display: none;
+}

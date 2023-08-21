@@ -108,10 +108,11 @@ function loadhtmlstruct() {
         </div>
         </header>  
         <nav>
-            <div class="nav sticky flex">
-                <ul class="menu hidden">
+            <div class="nav sticky flex hidden">
+                <ul class="menu">
                 </ul>
             </div>
+            <div class="overlay"></div>
         </nav>
     `);
     $("main").append(`
