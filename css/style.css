@@ -120,10 +120,7 @@ nav ul{
     background: #F6F5F5;
     text-align: left;
 }
-.menu > li:hover > ul{
-    display: block;
-}
-.submenu1 > li:hover > ul {
+.hover:hover > ul{
     display: block;
 }
 .menu li>ul li:last-child {
