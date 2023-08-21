@@ -45,13 +45,16 @@ function runSlide() {
 
 function runScript() {
     $(".layer, .khoa h3").mouseenter(function() {
-        $(this).css("opacity",".7");
-        $(this).siblings(".layer").css("opacity",".7"); // neu hover vao khu vuc khong phai layer
+        $(this).css("opacity",".8");
+        $(this).siblings(".layer").css("opacity",".8"); // neu hover vao khu vuc khong phai layer
         $(this).siblings("img").css("transform","scale(0.9)");
+        $(this).css("text-decoration","underline"); // khi hover vao text
+        $(this).siblings("h3").css("text-decoration","underline"); // khi hover vao vung k phai text
     });
     $(".khoa").mouseleave(function() {
         $(".layer").css("opacity",".5");
-        $("img").css("transform","scale(1)");
+        $(".khoa img").css("transform","scale(1)");
+        $(".khoa h3").css("text-decoration","unset");
     });
     $(".layer, .khoa h3").click(function(){
         $(this).siblings(".button").click();

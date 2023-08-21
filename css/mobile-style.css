@@ -23,7 +23,7 @@
         height: 6%;
         position: fixed;
         justify-content: space-around;
-        background-color: #146C94;
+        background-color: #095996;
         z-index: 9999;
     }
     .l-head > div:first-child,.r-head{
@@ -37,8 +37,11 @@
         align-items: center;
         position: fixed !important;
         height: 100%;
-        width: 50%;
+        width: 70%;
         background-color: #095996;
+    }
+    .menu li a {
+        font-size: 18px;
     }
     .nav{
         background-color: transparent;
@@ -48,13 +51,47 @@
         justify-content: left;
         margin-left: 0;
     }
+
     .menu li a{
         color: white;
         width: 100%;
         text-align: center;
     }
+    .menu li>ul li:last-child {
+        border-radius: 0;
+        border-bottom: none;
+    }
+    .menu li>ul li:last-child a{
+        border-radius: 0;
+    }
     .nav li{
         width: 100%;
+    }
+    .submenu1 {
+        position: unset;
+        min-width: unset;
+    }
+    .submenu1 > li > a {
+        background:#146C94;
+    }
+    .submenu2 {
+        padding: 0;
+        margin: unset;
+        position: unset;
+        min-width: unset;
+    }
+    .submenu1 > li {
+        border: unset !important;
+    }
+    .submenu2 > li {
+        border: unset !important;
+    }
+    /* set mau xen ke cho submenu 2 nhung chua duoc*/
+    .submenu2 > li > a:nth-child(odd) {
+        background: #5cc7b1;
+    }
+    .submenu2 > li > a:nth-child(even) {
+        background: rgb(92, 199, 177, .5);
     }
     .overlay{
         background-color: #0959964d;
