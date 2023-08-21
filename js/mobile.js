@@ -9,7 +9,7 @@ $(document).on("click",".menu a",function(event){
             $(event.target).parent().children("ul").toggle();
 })
 
-$(document).on("resize ready",function(){
-    if($(window).width() <= 800)
+$(window).on("resize ready",function(){
+    if($(window).width()<=800)
         $(".menu ul").attr("style", "display:none");
 })
