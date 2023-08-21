@@ -42,6 +42,7 @@
     }
     .textarea {
         padding-bottom: 0 !important;
+        margin-bottom: 0.5rem;
     }
     textarea {
         margin-top: .3rem !important;
