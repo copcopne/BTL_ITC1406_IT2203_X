@@ -38,6 +38,7 @@
         position: fixed !important;
         height: 100%;
         width: 70%;
+        z-index: 9998;
         background-color: #095996;
     }
     .menu li a {
@@ -101,10 +102,12 @@
     .submenu2 > li > a:nth-child(even) {
         background: rgb(92, 199, 177, .5);
     }
-    .overlay{
+    .overlay {
         background-color: #0959964d;
         position: fixed;
-        width: 100%;
+        width: 30%;
+        right: 0;
+        z-index: 9997;
         height: 100%;
     }
     .responsive{
