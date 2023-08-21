@@ -14,9 +14,12 @@ function openMenu(){
 }
 $(document).on("click",".menu a",function(event){
     if($(window).width()<=800)
-            $(event.target).parent().children("ul").toggle();
+        $(event.target).parent().children("ul").toggle();
+})
+$(document).on("click",".menu .nav-arrow",function(event){
+    if($(window).width()<=800)
+        $(event.target).parent().parent().children("ul").toggle();
 })
 $(document).on("click",".overlay",function () {
     openMenu();
 })
-
