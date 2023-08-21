@@ -58,6 +58,13 @@
         width: 100%;
         text-align: center;
     }
+    .menu > li:hover > ul{
+        display: none;
+    }
+    .submenu1 > li:hover > ul {
+        display: none;
+    }
+
     .menu li>ul li:last-child {
         border-radius: 0;
         border-bottom: none;
