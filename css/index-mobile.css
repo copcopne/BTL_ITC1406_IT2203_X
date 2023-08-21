@@ -9,6 +9,7 @@
         display: block !important;
         text-align: center;
         margin: .5rem;
+        margin-top: 6rem !important;
     }
     .thumbnail {
         display: none;

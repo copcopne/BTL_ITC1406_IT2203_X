@@ -121,6 +121,14 @@ function loadhtmlstruct() {
             </div>
             <div class="overlay"></div>
         </nav>
+        <div class="mobileIcon" style="display: none;">
+            <a href="index.html">
+                <img class="icon" src="src/logo.png" alt="logo" />
+                <h1  style="font-size:20px;">
+                    <span class="sub1">Tận tình</span> - <span class="sub2">Chất lượng</span>
+                </h1>
+            </a>
+        </div>
     `);
     $("main").append(`
     <button id="goTop" title="Go to top"><span>TOP</span></button>

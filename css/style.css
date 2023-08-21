@@ -121,7 +121,7 @@ nav ul{
     text-align: left;
 }
 .menu > li:hover > ul{
-    display:  block;
+    display: block;
 }
 .submenu1 > li:hover > ul {
     display: block;
